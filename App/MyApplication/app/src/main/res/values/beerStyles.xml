@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="beerStyles">
+        <item>Ale</item>
+        <item>Lager</item>
+        <item>Sour</item>
+        <item>Specialty</item>
+        <item>Wheat</item>
+        <item>Anglo-American Ales</item>
+        <item>Amber Ale</item>
+        <item>American Pale Ale</item>
+        <item>American Strong Ale</item>
+        <item>Barley Wine</item>
+        <item>Bitter</item>
+        <item>Brown Ale</item>
+        <item>Cream Ale</item>
+        <item>English Pale Ale</item>
+        <item>English Strong Ale</item>
+        <item>Golden Ale-Blond_Ale</item>
+        <item>Irish Ale</item>
+        <item>Mild Ale</item>
+        <item>Old Ale</item>
+        <item>Premium Bitter-ESB</item>
+        <item>Scoth Ale</item>
+        <item>Scottish Ale</item>
+        <item>Belgian-Style Ales</item>
+        <item>Abbey Dubbel</item>
+        <item>Abbey Trippel</item>
+        <item>Abt-Quadrupel</item>
+        <item>Belgian Ale</item>
+        <item>Belgian Strong Ale</item>
+        <item>Bière de Garde</item>
+        <item>Saison</item>
+        <item>German Ale</item>
+        <item>Altbier</item>
+        <item>Kölsch</item>
+        <item>IPA</item>
+        <item>Black IPA</item>
+        <item>Imperial-Double IPA</item>
+        <item>Imperial IPA</item>
+        <item>India Pale Ale (IPA)</item>
+        <item>Session IPA</item>
+        <item>Stouts and Porters</item>
+        <item>Stout</item>
+        <item>Porter</item>
+        <item>Baltic Porter</item>
+        <item>Imperial Porter</item>
+        <item>Dry Stout</item>
+        <item>Foreign Stout</item>
+        <item>Imperial Stout</item>
+        <item>Sweet Stout</item>
+        <item>Traditional Ale</item>
+        <item>Amber Lager-Vienna</item>
+        <item>Bock</item>
+        <item>Doppelbock</item>
+        <item>Dunkler Bock</item>
+        <item>Eisbock</item>
+        <item>Heller Bock</item>
+        <item>Weizen Bock</item>
+        <item>California Common</item>
+        <item>Czech Pilsner (Svetly)</item>
+        <item>Dortmunder Helles</item>
+        <item>Dunkel-Tmavý</item>
+        <item>Imperial Pils-Strong Pale Lager</item>
+        <item>India Style Lager</item>
+        <item>Malt Liquor</item>
+        <item>Oktoberfest-Märzen</item>
+        <item>Pale Lager</item>
+        <item>Pilsener</item>
+        <item>Polotmavý</item>
+        <item>Premium Lager</item>
+        <item>Radler-Shandy</item>
+        <item>Schwarzbier</item>
+        <item>Zwickel-Keller-Landbier</item>
+        <item>Berliner Weisse</item>
+        <item>Lambic</item>
+        <item>Lambic Style - Faro</item>
+        <item>Lambic Style - Fruit</item>
+        <item>Lambic Style - Gueuze</item>
+        <item>Lambic Style - Unblended</item>
+        <item>Sour-Wild Ale</item>
+        <item>Sour Red-Brown</item>
+        <item>Fruit Beer</item>
+        <item>Low Alcohol</item>
+        <item>Sahti-Gotlandsdricke-Koduõlu</item>
+        <item>Smoked</item>
+        <item>Specialty Grain</item>
+        <item>Spice-Herb Vegetable</item>
+        <item>Dunkelweizen</item>
+        <item>German Hefeweizen</item>
+        <item>German Kristallweizen</item>
+        <item>Grodziskie-Gose-Lichtenhainer</item>
+        <item>Wheat Ale</item>
+        <item>Witbier</item>
+    </string-array>
+</resources>

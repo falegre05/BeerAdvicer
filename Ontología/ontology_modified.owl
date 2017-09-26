@@ -1,0 +1,634 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://beerOntology.es/>
+
+
+AnnotationProperty: <http://beerOntology.es/#fuzzyLabel>
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: <http://beerOntology.es/#MuyPocoABV>
+
+    Annotations: 
+        <http://beerOntology.es/#fuzzyLabel> "<fuzzyOwl2 fuzzyType=\"datatype\">
+<Datatype type=\"leftshoulder\" a=\"3.5\" b=\"5\" />
+</fuzzyOwl2>"
+    
+    EquivalentTo: 
+        (xsd:double[>= 3.5] and xsd:double[<= 5.0])
+    
+    
+Datatype: xsd:double
+
+    
+Datatype: xsd:integer
+
+    
+Datatype: rdfs:Literal
+
+    
+DataProperty: <http://beerOntology.es/ABV>
+
+    Domain: 
+        <http://beerOntology.es/beer>
+    
+    Range: 
+        xsd:double
+    
+    
+DataProperty: <http://beerOntology.es/IBU>
+
+    Domain: 
+        <http://beerOntology.es/beer>
+    
+    Range: 
+        xsd:integer
+    
+    
+DataProperty: <http://beerOntology.es/img>
+
+    Domain: 
+        <http://beerOntology.es/beer>
+    
+    Range: 
+        rdfs:Literal
+    
+    
+Class: <http://beerOntology.es/Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/beer>
+    
+    
+Class: <http://beerOntology.es/American_Double_Stout>
+
+    SubClassOf: 
+        <http://beerOntology.es/Stout>
+    
+    
+Class: <http://beerOntology.es/Maibock>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/English_IPA>
+
+    SubClassOf: 
+        <http://beerOntology.es/IPA_and_Pale_Ale>
+    
+    
+Class: <http://beerOntology.es/Faro>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Foreign>
+
+    SubClassOf: 
+        <http://beerOntology.es/Stout>
+    
+    
+Class: <http://beerOntology.es/Wheat_Beer>
+
+    SubClassOf: 
+        <http://beerOntology.es/Ale>
+    
+    
+Class: <http://beerOntology.es/Bi�re_De_Garde>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/K�lsch>
+
+    SubClassOf: 
+        <http://beerOntology.es/Blonde_and_Golden>
+    
+    
+Class: <http://beerOntology.es/Pumpkin_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Specialty_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Bi�re_De_Champagne>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Euro_Pale_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Russian_Imperial_Stout>
+
+    SubClassOf: 
+        <http://beerOntology.es/Stout>
+    
+    
+Class: <http://beerOntology.es/M�rzen>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Light_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Berliner_Weissbier>
+
+    SubClassOf: 
+        <http://beerOntology.es/Wheat_Beer>
+    
+    
+Class: <http://beerOntology.es/American_Amber_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Tripel>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Dunkelweizen>
+
+    SubClassOf: 
+        <http://beerOntology.es/Wheat_Beer>
+    
+    
+Class: <http://beerOntology.es/Lambic-Unblended>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Euro_Strong_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Gluten-Free_Beer>
+
+    SubClassOf: 
+        <http://beerOntology.es/Specialty_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Baltic_Porter>
+
+    SubClassOf: 
+        <http://beerOntology.es/Porter>
+    
+    
+Class: <http://beerOntology.es/Specialty>
+
+    SubClassOf: 
+        <http://beerOntology.es/beer>
+    
+    
+Class: <http://beerOntology.es/American_Porter>
+
+    SubClassOf: 
+        <http://beerOntology.es/Porter>
+    
+    
+Class: <http://beerOntology.es/Irish_Red_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/IPA_and_Pale_Ale>
+    
+    
+Class: <http://beerOntology.es/Flanders_Red_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/English_Dark_Mild_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Brown_Ale>
+    
+    
+Class: <http://beerOntology.es/Schwarzbier>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/American_Pale_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/IPA_and_Pale_Ale>
+    
+    
+Class: <http://beerOntology.es/Blonde_and_Golden>
+
+    SubClassOf: 
+        <http://beerOntology.es/Ale>
+    
+    
+Class: <http://beerOntology.es/beer>
+
+    
+Class: <http://beerOntology.es/Saison>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Vienna_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Herbed>
+
+    SubClassOf: 
+        <http://beerOntology.es/Specialty_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Japanese_Rice_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Belgian_Pale_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Rauchbier>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Milk>
+
+    SubClassOf: 
+        <http://beerOntology.es/Stout>
+    
+    
+Class: <http://beerOntology.es/Munich_Dunkel_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Doppelbock>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Eisbock>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/beer>
+    
+    
+Class: <http://beerOntology.es/German_Pilsner>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Lager_NoGroup>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager>
+    
+    
+Class: <http://beerOntology.es/Munich_Helles_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/American_IPA>
+
+    SubClassOf: 
+        <http://beerOntology.es/IPA_and_Pale_Ale>
+    
+    
+Class: <http://beerOntology.es/Rye_Beer>
+
+    SubClassOf: 
+        <http://beerOntology.es/Specialty_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Gueuze>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/String_Ale_and_Barley_Wine>
+
+    SubClassOf: 
+        <http://beerOntology.es/Ale>
+    
+    
+Class: <http://beerOntology.es/Hefeweizen>
+
+    SubClassOf: 
+        <http://beerOntology.es/Wheat_Beer>
+    
+    
+Class: <http://beerOntology.es/Fruit_Beer>
+
+    SubClassOf: 
+        <http://beerOntology.es/Specialty_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Czech_Pilsner>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/California_Common>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Bock>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/English_Stout>
+
+    SubClassOf: 
+        <http://beerOntology.es/Stout>
+    
+    
+Class: <http://beerOntology.es/Stout>
+
+    SubClassOf: 
+        <http://beerOntology.es/Ale>
+    
+    
+Class: <http://beerOntology.es/Euro_Dark_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Brown_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Ale>
+    
+    
+Class: <http://beerOntology.es/Altbier>
+
+    SubClassOf: 
+        <http://beerOntology.es/IPA_and_Pale_Ale>
+    
+    
+Class: <http://beerOntology.es/IPA_and_Pale_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Ale>
+    
+    
+Class: <http://beerOntology.es/American_Brown_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Brown_Ale>
+    
+    
+Class: <http://beerOntology.es/American-Style-Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Oatmeal_Stout>
+
+    SubClassOf: 
+        <http://beerOntology.es/Stout>
+    
+    
+Class: <http://beerOntology.es/American_Pale_Wheat_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Wheat_Beer>
+    
+    
+Class: <http://beerOntology.es/English_Brown_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Brown_Ale>
+    
+    
+Class: <http://beerOntology.es/Lambic-Fruit>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/American_Blonde_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Blonde_and_Golden>
+    
+    
+Class: <http://beerOntology.es/American_All-Malt_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Specialty_NoGroup>
+
+    SubClassOf: 
+        <http://beerOntology.es/Specialty>
+    
+    
+Class: <http://beerOntology.es/Flanders_Oud_Bruin>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Belgian>
+
+    SubClassOf: 
+        <http://beerOntology.es/Ale>
+    
+    
+Class: <http://beerOntology.es/American_Double_IPA>
+
+    SubClassOf: 
+        <http://beerOntology.es/IPA_and_Pale_Ale>
+    
+    
+Class: <http://beerOntology.es/American_Double_Lager>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Dubbel>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/American_Stout>
+
+    SubClassOf: 
+        <http://beerOntology.es/Stout>
+    
+    
+Class: <http://beerOntology.es/Porter>
+
+    SubClassOf: 
+        <http://beerOntology.es/Ale>
+    
+    
+Class: <http://beerOntology.es/Extra_Special_Bitter>
+
+    SubClassOf: 
+        <http://beerOntology.es/Blonde_and_Golden>
+    
+    
+Class: <http://beerOntology.es/Witbier>
+
+    SubClassOf: 
+        <http://beerOntology.es/Wheat_Beer>
+    
+    
+Class: <http://beerOntology.es/English_Porter>
+
+    SubClassOf: 
+        <http://beerOntology.es/Porter>
+    
+    
+Class: <http://beerOntology.es/Dortmunder>
+
+    SubClassOf: 
+        <http://beerOntology.es/Lager_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Weizenbock>
+
+    SubClassOf: 
+        <http://beerOntology.es/Wheat_Beer>
+    
+    
+Class: <http://beerOntology.es/Belgian_Strong_Pale_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Black_and_Tan>
+
+    SubClassOf: 
+        <http://beerOntology.es/Specialty_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Cream_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Specialty_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Belgian_Witbier>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Quadrupel>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/Belgian_Dark_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/American_Wild_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Specialty_NoGroup>
+    
+    
+Class: <http://beerOntology.es/Belgian_IPA>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Class: <http://beerOntology.es/American_Amber_IPA>
+
+    SubClassOf: 
+        <http://beerOntology.es/IPA_and_Pale_Ale>
+    
+    
+Class: <http://beerOntology.es/English_Pale_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/IPA_and_Pale_Ale>
+    
+    
+Class: <http://beerOntology.es/Kristalweizen>
+
+    SubClassOf: 
+        <http://beerOntology.es/Wheat_Beer>
+    
+    
+Class: <http://beerOntology.es/Belgian_Strong_Dark_Ale>
+
+    SubClassOf: 
+        <http://beerOntology.es/Belgian>
+    
+    
+Individual: <http://beerOntology.es/Prueba>
+
+    Facts:  
+     <http://beerOntology.es/img>  "asdddddddddd"^^rdfs:Literal,
+     <http://beerOntology.es/ABV>  2.3,
+     <http://beerOntology.es/IBU>  7
+    
+    
