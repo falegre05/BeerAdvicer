@@ -83,9 +83,11 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
                 ibu = "0";
             }
             func_pertenencia = funcion(selectedAbv, selectedAbv, Double.valueOf(abv), Double.valueOf(ibu));
-            beer = new Beer(name, abv, ibu, img, Integer.valueOf(style_rating), func_pertenencia, brewery);
-            beers.add(beer);
-            Log.d(TAG, name + " " + abv + " " + ibu + " " + img + " " + style_rating + " " + brewery);
+            if(func_pertenencia > 0) {
+                beer = new Beer(name, abv, ibu, img, Integer.valueOf(style_rating), func_pertenencia, brewery);
+                beers.add(beer);
+                Log.d(TAG, name + " " + abv + " " + ibu + " " + img + " " + style_rating + " " + brewery);
+            }
         }
 
         Collections.sort(beers);

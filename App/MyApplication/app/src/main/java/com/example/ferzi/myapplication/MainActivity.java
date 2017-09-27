@@ -1,18 +1,13 @@
 package com.example.ferzi.myapplication;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import org.semanticweb.owlapi.model.OWLDataFactory;
@@ -53,9 +48,14 @@ public class MainActivity extends AppCompatActivity {
         // Si no existe una AsyncTask la crea
         Log.d(TAG, "onCreate: About to create MyAsyncTask");
         myLoadTask = new LoadOntTask(this);
-        mySearchTask = new SearchTask(this);
         Log.d(TAG, "lanzamos la tarea asincrona myLoadTask");
         myLoadTask.execute();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        ontologyLoaded(0);
     }
 
     public void ontologyLoaded(Integer integer) {
@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     "Codigo de respuesta: " + integer, Toast.LENGTH_LONG).show();
         Log.d(TAG, "Código de respuesta: " + integer);
         setContentView(R.layout.ontology_loaded);
+
+        mySearchTask = new SearchTask(this);
 
         //Spinnner abv
         ArrayAdapter<CharSequence> adaptadorAbv = ArrayAdapter.createFromResource(this, R.array.etiquetas,
@@ -98,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, selectedAbv + selectedIbu + selectedStyle);
 
                 // Obtener el valor devuelto en onRetainCustomNonConfigurationInstace
-                //mySearchTask = (SearchTask) getLastCustomNonConfigurationInstance();
                 Log.d(TAG, "lanzamos la tarea asincrona mySearchTask");
                 mySearchTask.execute(selectedAbv, selectedIbu, selectedStyle);
                 setContentView(R.layout.searching_screen);
@@ -108,22 +109,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void searchDone(Integer integer) {
         mySearchTask.detach();
-        setContentView(R.layout.beers_list);
-        beers.subList(19, beers.size()).clear();
-        ListViewAdapter listAdapter = new ListViewAdapter(this, beers);
-        final ListView listView = (ListView) findViewById(R.id.beers_listView);
-        listView.setAdapter(listAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Beer beer = (Beer) listView.getItemAtPosition(i);
-                //myDownloadImage.execute(beer);
-
-                Intent intent = new Intent(MainActivity.this, BeerInfoActivity.class);
-                intent.putExtra("beer", beer);
-                startActivity(intent);
-            }
-        });
+        Intent intent = new Intent(MainActivity.this, SearchBeersActivity.class);
+        intent.putExtra("beers", beers);
+        startActivity(intent);
     }
 }

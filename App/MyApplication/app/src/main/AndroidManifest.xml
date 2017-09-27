@@ -20,6 +20,9 @@
         <activity
             android:name=".BeerInfoActivity">
         </activity>
+        <activity
+            android:name=".SearchBeersActivity">
+        </activity>
     </application>
 
 </manifest>
