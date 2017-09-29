@@ -8,6 +8,7 @@ import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
+import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
@@ -55,17 +56,19 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
         OWLDataProperty RATING = factory.getOWLDataProperty("style_rating", pm);
         OWLDataProperty BREW = factory.getOWLDataProperty("brewery", pm);
 
+
         //COGER TODAS LAS CERVEZAS DE UN ESTILO
         OWLClass style = factory.getOWLClass(selectedStyle, pm);
         Log.d(TAG, style.toString());
         NodeSet<OWLNamedIndividual> lista = hermit.getInstances(style, false);
         Iterator iter = lista.getFlattened().iterator();
-        String name, abv, ibu, img, style_rating, brewery;
+        String name, abv, ibu, img, style_rating, brewery, beerStyle;
         double func_pertenencia;
         Beer beer;
         beers = new ArrayList();
         while(iter.hasNext()) {
             OWLNamedIndividual ind = (OWLNamedIndividual) iter.next();
+
 
             name = ind.toString().substring(24, ind.toString().indexOf(">")).replace("_", " ");
             abv = String.valueOf(hermit.getDataPropertyValues(ind, ABV));

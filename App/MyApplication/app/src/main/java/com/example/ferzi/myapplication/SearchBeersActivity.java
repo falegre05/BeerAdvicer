@@ -26,21 +26,24 @@ public class SearchBeersActivity extends Activity {
 
         Intent i = getIntent();
         ArrayList beers = (ArrayList) i.getSerializableExtra("beers");
+        if (!beers.isEmpty()) {
+            ListViewAdapter listAdapter = new ListViewAdapter(this, beers);
+            final ListView listView = (ListView) findViewById(R.id.beers_listView);
+            listView.setAdapter(listAdapter);
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-        ListViewAdapter listAdapter = new ListViewAdapter(this, beers);
-        final ListView listView = (ListView) findViewById(R.id.beers_listView);
-        listView.setAdapter(listAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    Beer beer = (Beer) listView.getItemAtPosition(i);
 
-                Beer beer = (Beer) listView.getItemAtPosition(i);
-
-                Intent intent = new Intent(SearchBeersActivity.this, BeerInfoActivity.class);
-                intent.putExtra("beer", beer);
-                startActivity(intent);
-            }
-        });
+                    Intent intent = new Intent(SearchBeersActivity.this, BeerInfoActivity.class);
+                    intent.putExtra("beer", beer);
+                    startActivity(intent);
+                }
+            });
+        } else {
+            setContentView((R.layout.no_results));
+        }
 
     }
 }

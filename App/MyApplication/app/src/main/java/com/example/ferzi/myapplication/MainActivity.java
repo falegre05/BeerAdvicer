@@ -61,8 +61,7 @@ public class MainActivity extends AppCompatActivity {
     public void ontologyLoaded(Integer integer) {
         myLoadTask.detach();
         if (integer != -1)
-            Toast.makeText(MainActivity.this,
-                    "Codigo de respuesta: " + integer, Toast.LENGTH_LONG).show();
+            //Toast.makeText(MainActivity.this, "Codigo de respuesta: " + integer, Toast.LENGTH_LONG).show();
         Log.d(TAG, "Código de respuesta: " + integer);
         setContentView(R.layout.ontology_loaded);
 
