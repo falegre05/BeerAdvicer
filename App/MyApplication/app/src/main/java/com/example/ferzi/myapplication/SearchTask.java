@@ -8,7 +8,6 @@ import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
-import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
@@ -60,14 +59,20 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
         //COGER TODAS LAS CERVEZAS DE UN ESTILO
         OWLClass style = factory.getOWLClass(selectedStyle, pm);
         Log.d(TAG, style.toString());
-        NodeSet<OWLNamedIndividual> lista = hermit.getInstances(style, false);
+        Log.d(TAG, "0");
+        NodeSet<OWLNamedIndividual> lista = hermit.getInstances(style, false); //85% del tiempo de la 1ª ejecución
+        Log.d(TAG, "1");
         Iterator iter = lista.getFlattened().iterator();
+        Log.d(TAG, "2");
         String name, abv, ibu, img, style_rating, brewery, beerStyle;
         double func_pertenencia;
         Beer beer;
         beers = new ArrayList();
+        Log.d(TAG, "3");
+        OWLNamedIndividual ind;
+        Log.d(TAG, "4");
         while(iter.hasNext()) {
-            OWLNamedIndividual ind = (OWLNamedIndividual) iter.next();
+            ind = (OWLNamedIndividual) iter.next();
 
 
             name = ind.toString().substring(24, ind.toString().indexOf(">")).replace("_", " ");
@@ -80,16 +85,18 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
             style_rating = style_rating.substring(2, style_rating.indexOf("\"", 2));
             brewery = String.valueOf(hermit.getDataPropertyValues(ind, BREW));
             brewery = brewery.substring(2, brewery.indexOf("\"", 2));
+            beerStyle = String.valueOf( hermit.getTypes(ind, true));
+            beerStyle = beerStyle.substring(38, beerStyle.indexOf(">", 38));
             if(ibu.length() > 3) {
                 ibu = ibu.substring(2, ibu.indexOf("\"", 2));
             } else {
                 ibu = "0";
             }
-            func_pertenencia = funcion(selectedAbv, selectedAbv, Double.valueOf(abv), Double.valueOf(ibu));
+            func_pertenencia = funcion(selectedAbv, selectedIbu, Double.valueOf(abv), Double.valueOf(ibu));
             if(func_pertenencia > 0) {
-                beer = new Beer(name, abv, ibu, img, Integer.valueOf(style_rating), func_pertenencia, brewery);
+                beer = new Beer(name, abv, ibu, img, Integer.valueOf(style_rating), func_pertenencia, brewery, beerStyle);
                 beers.add(beer);
-                Log.d(TAG, name + " " + abv + " " + ibu + " " + img + " " + style_rating + " " + brewery);
+                Log.d(TAG, beer.toString());
             }
         }
 

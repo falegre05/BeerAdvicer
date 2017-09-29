@@ -18,8 +18,9 @@ public class Beer implements Comparable<Beer>, Serializable {
     private int style_rating;
     private double func_pertenencia;
     private String brewery;
+    private String beerStyle;
 
-    public Beer(String name, String abv, String ibu, String img, int style_rating, double func_pertenencia, String brewery) {
+    public Beer(String name, String abv, String ibu, String img, int style_rating, double func_pertenencia, String brewery, String beerStyle) {
         this.name = name;
         this.abv = abv;
         this.ibu = ibu;
@@ -27,6 +28,7 @@ public class Beer implements Comparable<Beer>, Serializable {
         this.style_rating = style_rating;
         this.func_pertenencia = func_pertenencia;
         this.brewery = brewery;
+        this.beerStyle = beerStyle;
     }
 
     public String getName() {
@@ -96,6 +98,12 @@ public class Beer implements Comparable<Beer>, Serializable {
         this.brewery = brewery;
     }
 
+    public String getBeerStyle() { return beerStyle; }
+
+    public void setBeerStyle(String beerStyle) {
+        this.beerStyle = beerStyle;
+    }
+
     @Override
     public String toString() {
         return "Beer{" +
@@ -106,6 +114,9 @@ public class Beer implements Comparable<Beer>, Serializable {
                 ", style_rating=" + style_rating +
                 ", func_pertenencia=" + func_pertenencia +
                 ", brewery='" + brewery + '\'' +
+                ", beerStyle='" + beerStyle + '\'' +
                 '}';
     }
+
+
 }

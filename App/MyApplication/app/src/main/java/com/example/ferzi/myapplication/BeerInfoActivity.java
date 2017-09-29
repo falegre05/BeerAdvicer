@@ -52,5 +52,8 @@ public class BeerInfoActivity extends Activity {
 
         TextView rating = (TextView) findViewById(R.id.rating);
         rating.setText("Rating: " + String.valueOf(beer.getStyle_rating()));
+
+        TextView style = (TextView) findViewById(R.id.style);
+        style.setText("Style: " + beer.getBeerStyle());
     }
 }
