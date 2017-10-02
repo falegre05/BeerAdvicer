@@ -60,17 +60,14 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
         OWLClass style = factory.getOWLClass(selectedStyle, pm);
         Log.d(TAG, style.toString());
         Log.d(TAG, "0");
-        NodeSet<OWLNamedIndividual> lista = hermit.getInstances(style, false); //85% del tiempo de la 1ª ejecución
+        NodeSet<OWLNamedIndividual> lista = hermit.getInstances(style, false); //90% del tiempo de la 1ª ejecución
         Log.d(TAG, "1");
         Iterator iter = lista.getFlattened().iterator();
-        Log.d(TAG, "2");
         String name, abv, ibu, img, style_rating, brewery, beerStyle;
         double func_pertenencia;
         Beer beer;
         beers = new ArrayList();
-        Log.d(TAG, "3");
         OWLNamedIndividual ind;
-        Log.d(TAG, "4");
         while(iter.hasNext()) {
             ind = (OWLNamedIndividual) iter.next();
 
@@ -96,7 +93,7 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
             if(func_pertenencia > 0) {
                 beer = new Beer(name, abv, ibu, img, Integer.valueOf(style_rating), func_pertenencia, brewery, beerStyle);
                 beers.add(beer);
-                Log.d(TAG, beer.toString());
+                //Log.d(TAG, beer.toString());
             }
         }
 
@@ -208,10 +205,10 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
                     }
                     break;
             }
-            Log.d(TAG, "El valor dela funcion de pertenencia es: " + (meanAbv + meanIbu)/2);
+            //Log.d(TAG, "El valor dela funcion de pertenencia es: " + (meanAbv + meanIbu)/2);
             return (meanAbv + meanIbu)/2;
         }
-        Log.d(TAG, "El valor dela funcion de pertenencia es: " + meanAbv);
+        //Log.d(TAG, "El valor dela funcion de pertenencia es: " + meanAbv);
         return meanAbv;
     }
 
