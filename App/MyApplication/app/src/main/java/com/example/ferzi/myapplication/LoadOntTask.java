@@ -4,17 +4,20 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import org.semanticweb.HermiT.Reasoner;
-import org.semanticweb.owlapi.apibinding.OWLManager;
-import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLDataFactory;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
-import org.semanticweb.owlapi.util.DefaultPrefixManager;
 import java.io.InputStream;
+import java.util.Iterator;
+
+import org.mindswap.pellet.jena.PelletReasonerFactory;
+import com.hp.hpl.jena.ontology.Individual;
+import com.hp.hpl.jena.ontology.OntClass;
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.rdf.model.Literal;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.Property;
+import com.hp.hpl.jena.rdf.model.Resource;
 
 /**
  * Created by ferzi on 30/08/2017.
@@ -36,13 +39,15 @@ class LoadOntTask extends AsyncTask<String, Void, Integer> {
         mContext = activity;
     }
 
+    // HERMIT
     @Override
-    protected Integer doInBackground(String... params) {
+    /*protected Integer doInBackground(String... params) {
         IRI ontologyIRI = IRI.create("http://beerOntology.es/");
         // First, we create an OWLOntologyManager object. The manager will load and save ontologies.
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
         // We use the OWL API to load the ontology.
         InputStream ontology = mContext.getApplicationContext().getResources().openRawResource(R.raw.ontology_fuzzy);
+
 
         try {
             OWLOntology ont = manager.loadOntologyFromOntologyDocument(ontology);
@@ -50,25 +55,64 @@ class LoadOntTask extends AsyncTask<String, Void, Integer> {
             PrefixManager pm = new DefaultPrefixManager(ontologyIRI.toString());
             Log.d(TAG, "ONTOLOGIA CARGADA CORRECTAMENTE");
             // Now, we instantiate HermiT by creating an instance of the Reasoner class in the package org.semanticweb.HermiT.
-            OWLReasoner hermit = new Reasoner.ReasonerFactory().createReasoner(ont);
-            // Finally, we output whether the ontology is consistent.
+
+            //OWLReasoner hermit = new Reasoner.ReasonerFactory().createReasoner(ont);
+            Reasoner hermit = new Reasoner(ont);
+
+
             Log.d(TAG, "RAZONADOR CARGADO CORRECTAMENTE");
 
-            /*if (hermit.isConsistent()){
-                Log.d(TAG, "Es consistente");
-            } else {
-                Log.d(TAG, "No es consistente");
-            }*/
+
 
             mActivity.factory = factory;
             mActivity.pm = pm;
             mActivity.hermit = hermit;
-            Log.d(TAG, mActivity.factory.toString());
             return 0;
         }
         catch(OWLOntologyCreationException e){
             e.getStackTrace();
         }
+        return null;
+    }*/
+    //PELLET
+    protected Integer doInBackground(String... params) {
+        Log.d("PELLET", "pellet lanzado");
+        // We use the OWL API to load the ontology.
+        //InputStream ontology = mContext.getApplicationContext().getResources().openRawResource(R.raw.ontology_fuzzy);
+
+        String ont = "http://www.mindswap.org/2004/owl/mindswappers#";
+        // load the ontology with its imports and no reasoning
+        OntModel model = ModelFactory.createOntologyModel( PelletReasonerFactory.THE_SPEC );
+        Log.d("PELLET", "Hello" + String.valueOf(model));
+        model.read( ont );
+        Log.d("PELLET", String.valueOf(model));
+        // load the model to the reasoner
+        model.prepare();
+
+        // create property and resources to query the reasoner
+        OntClass Person = model.getOntClass("http://xmlns.com/foaf/0.1/Person");
+        Property workHomepage = model.getProperty("http://xmlns.com/foaf/0.1/workInfoHomepage");
+        Property foafName = model.getProperty("http://xmlns.com/foaf/0.1/name");
+
+        // get all instances of Person class
+        Iterator<?> i = Person.listInstances();
+        while( i.hasNext() ) {
+            Individual ind = (Individual) i.next();
+
+            // get the info about this specific individual
+            String name = ((Literal) ind.getPropertyValue( foafName )).getString();
+            Resource type = ind.getRDFType();
+            Resource homepage = (Resource) ind.getPropertyValue(workHomepage);
+
+            // print the results
+            Log.d("PELLET", "Name: " + name);
+            Log.d("PELLET", "Type: " + type.getLocalName());
+            if(homepage == null)
+                Log.d("PELLET", "Homepage: Unknown");
+            else
+                Log.d("PELLET", "Homepage: " + homepage);
+        }
+
         return null;
     }
 

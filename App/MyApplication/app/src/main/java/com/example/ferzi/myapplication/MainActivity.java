@@ -12,7 +12,8 @@ import android.widget.Toast;
 
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.PrefixManager;
-import org.semanticweb.owlapi.reasoner.OWLReasoner;
+//import org.semanticweb.owlapi.reasoner.OWLReasoner;
+//import org.semanticweb.HermiT.Reasoner;
 
 import java.util.ArrayList;
 
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     public OWLDataFactory factory;
     public PrefixManager pm;
-    public OWLReasoner hermit;
+    //public Reasoner hermit;
     public ArrayList beers;
 
     @Override

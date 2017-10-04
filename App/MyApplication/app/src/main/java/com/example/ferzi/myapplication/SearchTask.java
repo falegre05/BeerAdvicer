@@ -10,7 +10,8 @@ import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.reasoner.NodeSet;
-import org.semanticweb.owlapi.reasoner.OWLReasoner;
+//import org.semanticweb.owlapi.reasoner.OWLReasoner;
+//import org.semanticweb.HermiT.Reasoner;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,7 +29,7 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
 
     private OWLDataFactory factory;
     private PrefixManager pm;
-    private OWLReasoner hermit;
+    //private Reasoner hermit;
     private String selectedAbv;
     private String selectedIbu;
     private String selectedStyle;
@@ -44,7 +45,7 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
     protected Integer doInBackground(String... params) {
         factory = mActivity.factory;
         pm = mActivity.pm;
-        hermit = mActivity.hermit;
+        //hermit = mActivity.hermit;
         selectedAbv = params[0];
         selectedIbu = params[1];
         selectedStyle = params[2].replace(" ", "_");
@@ -57,7 +58,7 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
 
 
         //COGER TODAS LAS CERVEZAS DE UN ESTILO
-        OWLClass style = factory.getOWLClass(selectedStyle, pm);
+        /*OWLClass style = factory.getOWLClass(selectedStyle, pm);
         Log.d(TAG, style.toString());
         Log.d(TAG, "0");
         NodeSet<OWLNamedIndividual> lista = hermit.getInstances(style, false); //90% del tiempo de la 1ª ejecución
@@ -97,7 +98,7 @@ class SearchTask extends AsyncTask<String, Void, Integer> {
             }
         }
 
-        Collections.sort(beers);
+        Collections.sort(beers);*/
         return 0;
     }
 

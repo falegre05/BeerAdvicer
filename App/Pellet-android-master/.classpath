@@ -5,5 +5,14 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="C:/Users/ferzi/Documents/Univesidad/TFG/BeerAdvicer/App/Pellet-android-master/libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ferzi/Documents/Univesidad/TFG/BeerAdvicer/App/Pellet-android-master/libs/androjena__icu4j-3.4.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ferzi/Documents/Univesidad/TFG/BeerAdvicer/App/Pellet-android-master/libs/androjena__iri-0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ferzi/Documents/Univesidad/TFG/BeerAdvicer/App/Pellet-android-master/libs/androjena__slf4j-android-1.6.1-RC1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ferzi/Documents/Univesidad/TFG/BeerAdvicer/App/Pellet-android-master/libs/androjena_0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ferzi/Documents/Univesidad/TFG/BeerAdvicer/App/Pellet-android-master/libs/aterm-java-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ferzi/Documents/Univesidad/TFG/BeerAdvicer/App/Pellet-android-master/libs/jgrapht-jdk1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ferzi/Documents/Univesidad/TFG/BeerAdvicer/App/Pellet-android-master/libs/owlapi-distribution-3.4.10.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
