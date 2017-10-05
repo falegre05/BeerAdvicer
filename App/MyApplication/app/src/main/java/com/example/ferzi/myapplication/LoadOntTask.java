@@ -63,7 +63,6 @@ class LoadOntTask extends AsyncTask<String, Void, Integer> {
             mActivity.factory = factory;
             mActivity.pm = pm;
             mActivity.hermit = hermit;
-            Log.d(TAG, mActivity.factory.toString());
             return 0;
         }
         catch(OWLOntologyCreationException e){
