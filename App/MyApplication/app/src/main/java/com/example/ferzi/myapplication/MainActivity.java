@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.PrefixManager;
@@ -24,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private LoadOntTask myLoadTask = null;
     private SearchTask mySearchTask;
+    private FirstSearchTask myFirstSearchTask;
 
 
     private Spinner spinnerAbv;
@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     public OWLReasoner hermit;
     public ArrayList beers;
 
+    private boolean firstSearchDone = false;
+    private boolean searchButtonClicked = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         myLoadTask = new LoadOntTask(this);
         Log.d(TAG, "lanzamos la tarea asincrona myLoadTask");
         myLoadTask.execute();
+
+        myFirstSearchTask = new FirstSearchTask(this);
+        Log.d(TAG, "lanzamos la tarea asincrona myFirstSearchTask");
+        myFirstSearchTask.execute();
     }
 
     @Override
@@ -59,13 +65,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ontologyLoaded(Integer integer) {
+        mySearchTask = new SearchTask(this);
+
         myLoadTask.detach();
         if (integer != -1)
             //Toast.makeText(MainActivity.this, "Codigo de respuesta: " + integer, Toast.LENGTH_LONG).show();
         Log.d(TAG, "Código de respuesta: " + integer);
         setContentView(R.layout.ontology_loaded);
-
-        mySearchTask = new SearchTask(this);
 
         //Spinnner abv
         ArrayAdapter<CharSequence> adaptadorAbv = ArrayAdapter.createFromResource(this, R.array.etiquetas,
@@ -98,12 +104,24 @@ public class MainActivity extends AppCompatActivity {
                 selectedStyle = spinnerStyles.getSelectedItem().toString();
                 Log.d(TAG, selectedAbv + selectedIbu + selectedStyle);
 
-                // Obtener el valor devuelto en onRetainCustomNonConfigurationInstace
-                Log.d(TAG, "lanzamos la tarea asincrona mySearchTask");
-                mySearchTask.execute(selectedAbv, selectedIbu, selectedStyle);
+                searchButtonClicked = true;
+                if(firstSearchDone){
+                    Log.d(TAG, "lanzamos la tarea asincrona mySearchTask");
+                    mySearchTask.execute(selectedAbv, selectedIbu, selectedStyle);
+                }
+
                 setContentView(R.layout.searching_screen);
             }
         });
+    }
+
+    public void firstSearchDone(Integer integer){
+        myFirstSearchTask.detach();
+        firstSearchDone = true;
+        if(searchButtonClicked) {
+            Log.d(TAG, "lanzamos la tarea asincrona mySearchTask");
+            mySearchTask.execute(selectedAbv, selectedIbu, selectedStyle);
+        }
     }
 
     public void searchDone(Integer integer) {
