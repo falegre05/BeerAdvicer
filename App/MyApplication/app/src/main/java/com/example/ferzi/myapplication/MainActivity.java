@@ -21,9 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private final static String TAG = "MainActivity";
 
-    private LoadOntTask myLoadTask = null;
-    private SearchTask mySearchTask;
-    private FirstSearchTask myFirstSearchTask;
+    private ClientTask myClientTask;
 
 
     private Spinner spinnerAbv;
@@ -33,29 +31,13 @@ public class MainActivity extends AppCompatActivity {
     private String selectedIbu;
     private String selectedStyle;
 
-    public OWLDataFactory factory;
-    public PrefixManager pm;
-    public OWLReasoner hermit;
     public ArrayList beers;
 
-    private boolean firstSearchDone = false;
-    private boolean searchButtonClicked = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate");
-        setContentView(R.layout.loading_screen);
-
-
-        // Si no existe una AsyncTask la crea
-        Log.d(TAG, "onCreate: About to create MyAsyncTask");
-        myLoadTask = new LoadOntTask(this);
-        Log.d(TAG, "lanzamos la tarea asincrona myLoadTask");
-        myLoadTask.execute();
-
-        myFirstSearchTask = new FirstSearchTask(this);
-        Log.d(TAG, "lanzamos la tarea asincrona myFirstSearchTask");
-        myFirstSearchTask.execute();
+        ontologyLoaded(0);
     }
 
     @Override
@@ -65,9 +47,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ontologyLoaded(Integer integer) {
-        mySearchTask = new SearchTask(this);
+        myClientTask = new ClientTask(this);
 
-        myLoadTask.detach();
         if (integer != -1)
             //Toast.makeText(MainActivity.this, "Codigo de respuesta: " + integer, Toast.LENGTH_LONG).show();
         Log.d(TAG, "Código de respuesta: " + integer);
@@ -104,28 +85,18 @@ public class MainActivity extends AppCompatActivity {
                 selectedStyle = spinnerStyles.getSelectedItem().toString();
                 Log.d(TAG, selectedAbv + selectedIbu + selectedStyle);
 
-                searchButtonClicked = true;
-                if(firstSearchDone){
-                    Log.d(TAG, "lanzamos la tarea asincrona mySearchTask");
-                    mySearchTask.execute(selectedAbv, selectedIbu, selectedStyle);
-                }
+
+                Log.d(TAG, "lanzamos la tarea asincrona myClientTask");
+                myClientTask.execute(selectedAbv, selectedIbu, selectedStyle);
+
 
                 setContentView(R.layout.searching_screen);
             }
         });
     }
 
-    public void firstSearchDone(Integer integer){
-        myFirstSearchTask.detach();
-        firstSearchDone = true;
-        if(searchButtonClicked) {
-            Log.d(TAG, "lanzamos la tarea asincrona mySearchTask");
-            mySearchTask.execute(selectedAbv, selectedIbu, selectedStyle);
-        }
-    }
-
     public void searchDone(Integer integer) {
-        mySearchTask.detach();
+        myClientTask.detach();
         Log.d(TAG, "Search done");
 
         Intent intent = new Intent(MainActivity.this, SearchBeersActivity.class);
