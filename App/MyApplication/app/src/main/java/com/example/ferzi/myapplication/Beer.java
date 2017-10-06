@@ -1,9 +1,6 @@
 package com.example.ferzi.myapplication;
 
-import android.support.annotation.NonNull;
-
 import java.io.Serializable;
-import java.util.Comparator;
 
 /**
  * Created by ferzi on 08/09/2017.

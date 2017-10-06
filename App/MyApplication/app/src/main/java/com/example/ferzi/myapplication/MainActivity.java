@@ -126,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void searchDone(Integer integer) {
         mySearchTask.detach();
+        Log.d(TAG, "Search done");
 
         Intent intent = new Intent(MainActivity.this, SearchBeersActivity.class);
         intent.putExtra("beers", beers);
