@@ -436,7 +436,7 @@ public abstract class AbstractModuleExtractor implements ModuleExtractor {
 			Set<OWLEntity> entities = axiomEntities.remove( axiom );
 
 			for( OWLEntity entity : entities ) {
-				entityAxioms.remove( entity, axiom );
+				entityAxioms.myRemove( entity, axiom );
 
 				if( !entityAxioms.containsKey( entity ) ) {
 					if( log.isLoggable( Level.FINE ) )

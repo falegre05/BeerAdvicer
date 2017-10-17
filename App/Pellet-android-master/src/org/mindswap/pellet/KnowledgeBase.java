@@ -1617,9 +1617,9 @@ public class KnowledgeBase {
 		if( PelletOptions.KEEP_ABOX_ASSERTIONS ) {
 			ATermAppl propAxiom = ATermUtils.makePropAtom( p, i1, i2 );
 			if( ATermUtils.isLiteral( i2 ) )
-				aboxAssertions.remove( AssertionType.DATA_ROLE, propAxiom );
+				aboxAssertions.myRemove( AssertionType.DATA_ROLE, propAxiom );
 			else
-				aboxAssertions.remove( AssertionType.OBJ_ROLE, propAxiom );
+				aboxAssertions.myRemove( AssertionType.OBJ_ROLE, propAxiom );
 		}
 
 		return true;
@@ -1704,7 +1704,7 @@ public class KnowledgeBase {
 
 		if( PelletOptions.KEEP_ABOX_ASSERTIONS ) {
 			ATermAppl typeAxiom = ATermUtils.makeTypeAtom( ind, c );
-			aboxAssertions.remove( AssertionType.TYPE, typeAxiom );
+			aboxAssertions.myRemove( AssertionType.TYPE, typeAxiom );
 		}
 		
 		// set deletion flag
