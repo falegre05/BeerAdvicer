@@ -27,7 +27,8 @@ public class ClientTask extends AsyncTask<String, Void, Integer> {
     private String selectedProperty;
 
     // Para almacenar la dirección y número de puerto donde escucha el servidor
-    static private String SERVER_ADDRESS = "192.168.1.33";  //CASA
+    //static private String SERVER_ADDRESS = "192.168.1.33";  //CASA
+    static private String SERVER_ADDRESS = "81.37.241.232";  //CASA
     static private int SERVER_PORT = 2000;
 
     // Creación del socket con el que se llevará a cabo
