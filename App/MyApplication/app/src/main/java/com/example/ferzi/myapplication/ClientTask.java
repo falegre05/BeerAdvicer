@@ -24,11 +24,10 @@ public class ClientTask extends AsyncTask<String, Void, Integer> {
     private String selectedAbv;
     private String selectedIbu;
     private String selectedStyle;
+    private String selectedProperty;
 
-    // Para almacenar la dirección
-    // y número de puerto donde escucha el
-    // proceso servidor
-    static private String SERVER_ADDRESS = "192.168.1.33";
+    // Para almacenar la dirección y número de puerto donde escucha el servidor
+    static private String SERVER_ADDRESS = "192.168.1.33";  //CASA
     static private int SERVER_PORT = 2000;
 
     // Creación del socket con el que se llevará a cabo
@@ -92,7 +91,8 @@ public class ClientTask extends AsyncTask<String, Void, Integer> {
         selectedAbv = params[0].replace(" ", "");
         selectedIbu = params[1].replace(" ", "");
         selectedStyle = params[2].replace(" ", "_");
-        String query = selectedAbv + " " + selectedIbu + " " + selectedStyle;
+        selectedProperty = params[3];
+        String query = selectedAbv + " " + selectedIbu + " " + selectedStyle + " " + selectedProperty;
         Log.d(TAG, query);
         try{
             canalSalidaAlServidor.println(query);
@@ -139,8 +139,7 @@ public class ClientTask extends AsyncTask<String, Void, Integer> {
 
         while((van<maxIntentos) && !exito){
             try {
-                socketAlServidor = new Socket(
-                        SERVER_ADDRESS, SERVER_PORT);
+                socketAlServidor = new Socket(SERVER_ADDRESS, SERVER_PORT);
                 exito = true;
             } catch (Exception e) {
                 van++;

@@ -27,9 +27,11 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnerAbv;
     private Spinner spinnerIbu;
     private Spinner spinnerStyles;
+    private Spinner spinnerProperties;
     private String selectedAbv;
     private String selectedIbu;
     private String selectedStyle;
+    private String selectedProperty;
 
     public ArrayList beers;
 
@@ -76,6 +78,14 @@ public class MainActivity extends AppCompatActivity {
         adaptadorStyles.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerStyles.setAdapter(adaptadorStyles);
 
+
+        //Spinnner Properties
+        ArrayAdapter<CharSequence> adaptadorProperties = ArrayAdapter.createFromResource(this, R.array.beerProperties,
+                android.R.layout.simple_spinner_item);
+        spinnerProperties = (Spinner) findViewById(R.id.spinnerProperties);
+        adaptadorStyles.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerProperties.setAdapter(adaptadorProperties);
+
         //Button Buscar
         Button buttonBuscar = (Button) findViewById(R.id.buttonBuscar);
         buttonBuscar.setOnClickListener(new View.OnClickListener() {
@@ -83,11 +93,12 @@ public class MainActivity extends AppCompatActivity {
                 selectedAbv = spinnerAbv.getSelectedItem().toString();
                 selectedIbu = spinnerIbu.getSelectedItem().toString();
                 selectedStyle = spinnerStyles.getSelectedItem().toString();
-                Log.d(TAG, selectedAbv + selectedIbu + selectedStyle);
+                selectedProperty = spinnerProperties.getSelectedItem().toString();
+                Log.d(TAG, selectedAbv + selectedIbu + selectedStyle + selectedProperty);
 
 
                 Log.d(TAG, "lanzamos la tarea asincrona myClientTask");
-                myClientTask.execute(selectedAbv, selectedIbu, selectedStyle);
+                myClientTask.execute(selectedAbv, selectedIbu, selectedStyle, selectedProperty);
 
 
                 setContentView(R.layout.searching_screen);
