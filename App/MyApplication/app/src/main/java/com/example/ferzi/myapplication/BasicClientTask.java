@@ -15,20 +15,19 @@ import java.util.regex.Pattern;
  * Created by ferzi on 06/10/2017.
  */
 
-public class ClientTask extends AsyncTask<String, Void, Integer> {
+public class BasicClientTask extends AsyncTask<String, Void, Integer> {
 
-    private final static String TAG = "ClientTask";
+    private final static String TAG = "BasicClientTask";
 
     private static ArrayList<Beer> beers;
 
-    private String selectedAbv;
-    private String selectedIbu;
-    private String selectedStyle;
-    private String selectedProperty;
+    private String tipoQuery;
+    private String busqueda;
 
     // Para almacenar la dirección y número de puerto donde escucha el servidor
     //static private String SERVER_ADDRESS = "192.168.1.33";  //CASA
-    static private String SERVER_ADDRESS = "81.37.241.232";  //CASA
+    //static private String SERVER_ADDRESS = "81.37.241.232";  //CASA GLOBAL
+    static private String SERVER_ADDRESS = "90.174.4.67";  //MOVIL
     static private int SERVER_PORT = 2000;
 
     // Creación del socket con el que se llevará a cabo
@@ -37,7 +36,7 @@ public class ClientTask extends AsyncTask<String, Void, Integer> {
 
 
     private MainActivity mActivity = null;
-    public ClientTask(MainActivity activity) {
+    public BasicClientTask(MainActivity activity) {
         this.mActivity = activity;
     }
 
@@ -89,11 +88,10 @@ public class ClientTask extends AsyncTask<String, Void, Integer> {
         // que le pasa al servidordel usuario que lo
         // está ejecutando.
 
-        selectedAbv = params[0].replace(" ", "");
-        selectedIbu = params[1].replace(" ", "");
-        selectedStyle = params[2].replace(" ", "_");
-        selectedProperty = params[3];
-        String query = selectedAbv + " " + selectedIbu + " " + selectedStyle + " " + selectedProperty;
+        tipoQuery = params[0];
+        busqueda = params[1];
+
+        String query = tipoQuery + " " + busqueda;
         Log.d(TAG, query);
         try{
             canalSalidaAlServidor.println(query);
@@ -129,7 +127,7 @@ public class ClientTask extends AsyncTask<String, Void, Integer> {
 
     protected void onPostExecute(Integer integer) {
         mActivity.beers = beers;
-        mActivity.searchDone(integer);
+        mActivity.basicSearchDone(integer);
     }
 
     static private boolean conectarServidor(int maxIntentos){
