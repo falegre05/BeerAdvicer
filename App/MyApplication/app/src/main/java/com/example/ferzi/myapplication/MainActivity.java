@@ -7,11 +7,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Spinner;
-
-import org.semanticweb.owlapi.model.OWLDataFactory;
-import org.semanticweb.owlapi.model.PrefixManager;
-import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
 import java.util.ArrayList;
 
@@ -21,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     private final static String TAG = "MainActivity";
 
-    private ClientTask myClientTask;
+    private AdvancedClientTask myAdvancedClientTask;
+    private BasicClientTask myBasicClientTask;
 
 
     private Spinner spinnerAbv;
@@ -32,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
     private String selectedIbu;
     private String selectedStyle;
     private String selectedProperty;
+    private RadioButton cerveza;
+    private RadioButton cerveceria;
+    private EditText editQuery;
 
     public ArrayList beers;
 
@@ -39,22 +41,40 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate");
-        ontologyLoaded(0);
+        loadMainScreen();
+    }
+
+    protected void loadMainScreen() {
+
+        setContentView(R.layout.main_screen);
+
+        //Button Buscar Personalizada
+        Button buttonPersonalizada = (Button) findViewById(R.id.buttonPersonalizada);
+        buttonPersonalizada.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                customSearch();
+            }
+        });
+
+        //Button Buscar Básica
+        Button buttonSimple = (Button) findViewById(R.id.buttonSimple);
+        buttonSimple.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                normalSearch();
+            }
+        });
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        ontologyLoaded(0);
+        loadMainScreen();
     }
 
-    public void ontologyLoaded(Integer integer) {
-        myClientTask = new ClientTask(this);
+    public void customSearch() {
+        myAdvancedClientTask = new AdvancedClientTask(this);
 
-        if (integer != -1)
-            //Toast.makeText(MainActivity.this, "Codigo de respuesta: " + integer, Toast.LENGTH_LONG).show();
-        Log.d(TAG, "Código de respuesta: " + integer);
-        setContentView(R.layout.ontology_loaded);
+        setContentView(R.layout.custom_search);
 
         //Spinnner abv
         ArrayAdapter<CharSequence> adaptadorAbv = ArrayAdapter.createFromResource(this, R.array.etiquetas,
@@ -97,8 +117,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, selectedAbv + selectedIbu + selectedStyle + selectedProperty);
 
 
-                Log.d(TAG, "lanzamos la tarea asincrona myClientTask");
-                myClientTask.execute(selectedAbv, selectedIbu, selectedStyle, selectedProperty);
+                Log.d(TAG, "lanzamos la tarea asincrona myAdvancedClientTask");
+                myAdvancedClientTask.execute(selectedAbv, selectedIbu, selectedStyle, selectedProperty);
 
 
                 setContentView(R.layout.searching_screen);
@@ -106,9 +126,48 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void searchDone(Integer integer) {
-        myClientTask.detach();
-        Log.d(TAG, "Search done");
+    public void normalSearch() {
+
+        setContentView(R.layout.normal_search);
+
+        cerveza = (RadioButton)findViewById(R.id.radio_cerveza);
+        cerveceria = (RadioButton)findViewById(R.id.radio_cerveceria);
+        myBasicClientTask = new BasicClientTask(this);
+        editQuery = (EditText)findViewById((R.id.editQuery));
+
+
+        //Button Buscar Personalizada
+        Button buttonBuscar = (Button) findViewById(R.id.buttonSearch);
+        buttonBuscar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String busqueda = String.valueOf(editQuery.getText());
+                if (cerveza.isChecked()){
+                    Log.d(TAG, "cerveza" + busqueda);
+                    Log.d(TAG, "lanzamos la tarea asincrona myBasicClientTask");
+                    myBasicClientTask.execute("cerveza", busqueda.replace(" ", "_"));
+                    setContentView(R.layout.searching_screen);
+                } else{
+                    Log.d(TAG, "cerveceria" + busqueda);
+                    Log.d(TAG, "lanzamos la tarea asincrona myBasicClientTask");
+                    myBasicClientTask.execute("cerveceria", busqueda.replace(" ", "_"));
+                    setContentView(R.layout.searching_screen);
+                }
+            }
+        });
+    }
+
+    public void advancedSearchDone(Integer integer) {
+        myAdvancedClientTask.detach();
+        Log.d(TAG, "Advanced search done");
+
+        Intent intent = new Intent(MainActivity.this, SearchBeersActivity.class);
+        intent.putExtra("beers", beers);
+        startActivity(intent);
+    }
+
+    public void basicSearchDone(Integer integer) {
+        myBasicClientTask.detach();
+        Log.d(TAG, "Basic search done");
 
         Intent intent = new Intent(MainActivity.this, SearchBeersActivity.class);
         intent.putExtra("beers", beers);
