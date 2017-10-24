@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
     protected void loadMainScreen() {
 
         setContentView(R.layout.main_screen);
+
+        ImageView image = (ImageView) findViewById(R.id.image);
+        image.setImageResource(R.drawable.beers);
 
         //Button Buscar Personalizada
         Button buttonPersonalizada = (Button) findViewById(R.id.buttonPersonalizada);
