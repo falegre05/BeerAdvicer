@@ -28,7 +28,8 @@ public class AdvancedClientTask extends AsyncTask<String, Void, Integer> {
 
     // Para almacenar la dirección y número de puerto donde escucha el servidor
     //static private String SERVER_ADDRESS = "192.168.1.33";  //CASA
-    static private String SERVER_ADDRESS = "81.37.241.232";  //CASA GLOBAL
+    //static private String SERVER_ADDRESS = "81.37.241.232";  //CASA GLOBAL
+    static private String SERVER_ADDRESS = "54.93.186.30";  //AWS HOST
     static private int SERVER_PORT = 2000;
 
     // Creación del socket con el que se llevará a cabo

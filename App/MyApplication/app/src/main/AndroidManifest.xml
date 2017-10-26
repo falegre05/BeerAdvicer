@@ -5,12 +5,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="Beer advicer"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,10 +19,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BeerInfoActivity">
+            android:name=".BeerInfoActivity"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".SearchBeersActivity">
+            android:name=".SearchBeersActivity"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

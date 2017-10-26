@@ -39,21 +39,21 @@ public class BeerInfoActivity extends Activity {
         image.setImageBitmap(bmp);
 
         TextView name = (TextView) findViewById(R.id.name);
-        name.setText("Name: " + beer.getName());
+        name.setText("Nombre: " + beer.getName());
 
         TextView brewery = (TextView) findViewById(R.id.brewery);
-        brewery.setText("Brewery: " + beer.getBrewery());
+        brewery.setText("Cervecería: " + beer.getBrewery());
 
         TextView ibu = (TextView) findViewById(R.id.ibu);
-        ibu.setText("Ibu: " + beer.getIbu());
+        ibu.setText("Amargura: " + beer.getIbu());
 
         TextView abv = (TextView) findViewById(R.id.abv);
-        abv.setText("Abv: " + beer.getAbv());
+        abv.setText("Alcohol: " + beer.getAbv());
 
         TextView rating = (TextView) findViewById(R.id.rating);
-        rating.setText("Rating: " + String.valueOf(beer.getStyle_rating()));
+        rating.setText("Puntuación (0-100): " + String.valueOf(beer.getStyle_rating()));
 
         TextView style = (TextView) findViewById(R.id.style);
-        style.setText("Style: " + beer.getBeerStyle().replace("_", " "));
+        style.setText("Estilo: " + beer.getBeerStyle().replace("_", " "));
     }
 }

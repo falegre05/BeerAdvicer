@@ -145,16 +145,18 @@ public class MainActivity extends AppCompatActivity {
         buttonBuscar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String busqueda = String.valueOf(editQuery.getText());
-                if (cerveza.isChecked()){
-                    Log.d(TAG, "cerveza" + busqueda);
-                    Log.d(TAG, "lanzamos la tarea asincrona myBasicClientTask");
-                    myBasicClientTask.execute("cerveza", busqueda.replace(" ", "_"));
-                    setContentView(R.layout.searching_screen);
-                } else{
-                    Log.d(TAG, "cerveceria" + busqueda);
-                    Log.d(TAG, "lanzamos la tarea asincrona myBasicClientTask");
-                    myBasicClientTask.execute("cerveceria", busqueda.replace(" ", "_"));
-                    setContentView(R.layout.searching_screen);
+                if (!busqueda.isEmpty()){
+                    if (cerveza.isChecked()){
+                        Log.d(TAG, "cerveza" + busqueda);
+                        Log.d(TAG, "lanzamos la tarea asincrona myBasicClientTask");
+                        myBasicClientTask.execute("cerveza", busqueda.replace(" ", "_"));
+                        setContentView(R.layout.searching_screen);
+                    } else{
+                        Log.d(TAG, "cerveceria" + busqueda);
+                        Log.d(TAG, "lanzamos la tarea asincrona myBasicClientTask");
+                        myBasicClientTask.execute("cerveceria", busqueda.replace(" ", "_"));
+                        setContentView(R.layout.searching_screen);
+                    }
                 }
             }
         });
