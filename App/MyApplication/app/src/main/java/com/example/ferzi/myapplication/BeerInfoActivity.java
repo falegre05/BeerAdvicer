@@ -26,6 +26,7 @@ public class BeerInfoActivity extends Activity {
     private String selectedAbv;
     private String selectedIbu;
     private String tipo;
+    private Beer beer;
 
     public ArrayList beers;
 
@@ -35,8 +36,15 @@ public class BeerInfoActivity extends Activity {
         Log.d(TAG, "onCreate");
 
         Intent i = getIntent();
-        Beer beer = (Beer) i.getSerializableExtra("beer");
+        beer = (Beer) i.getSerializableExtra("beer");
         tipo = i.getExtras().getString("tipo");
+        DownloadImage myDownloadImage = new DownloadImage(this);
+        myDownloadImage.execute(beer);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
         DownloadImage myDownloadImage = new DownloadImage(this);
         myDownloadImage.execute(beer);
     }
