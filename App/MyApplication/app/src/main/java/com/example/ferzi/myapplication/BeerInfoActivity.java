@@ -41,7 +41,7 @@ public class BeerInfoActivity extends Activity {
         myDownloadImage.execute(beer);
     }
 
-    public void loadBeerInfo (Beer beer, Bitmap bmp) {
+    public void loadBeerInfo (final Beer beer, Bitmap bmp) {
         //myDownloadImage.detach();
 
         setContentView(R.layout.info_beer);

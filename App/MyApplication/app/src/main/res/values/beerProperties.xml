@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="beerProperties">
+        <item>Indiferente</item>
         <item>Alcohol</item>
         <item>Amargura</item>
         <item>Puntuación</item>

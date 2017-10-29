@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="etiquetas">
+        <item>Indiferente</item>
         <item>Muy poco</item>
         <item>Poco</item>
         <item>Moderado</item>
