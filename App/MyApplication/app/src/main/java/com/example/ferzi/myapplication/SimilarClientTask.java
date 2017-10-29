@@ -15,14 +15,16 @@ import java.util.regex.Pattern;
  * Created by ferzi on 06/10/2017.
  */
 
-public class BasicClientTask extends AsyncTask<String, Void, Integer> {
+public class SimilarClientTask extends AsyncTask<String, Void, Integer> {
 
-    private final static String TAG = "BasicClientTask";
+    private final static String TAG = "SimilarClientTask";
 
     private static ArrayList<Beer> beers;
 
-    private String tipoQuery;
-    private String busqueda;
+    private String selectedAbv;
+    private String selectedIbu;
+    private String selectedStyle;
+    private String selectedProperty;
 
     // Para almacenar la dirección y número de puerto donde escucha el servidor
     //static private String SERVER_ADDRESS = "192.168.1.33";  //CASA
@@ -36,8 +38,8 @@ public class BasicClientTask extends AsyncTask<String, Void, Integer> {
     static private Socket socketAlServidor = null;
 
 
-    private MainActivity mActivity = null;
-    public BasicClientTask(MainActivity activity) {
+    private BeerInfoActivity mActivity = null;
+    public SimilarClientTask(BeerInfoActivity activity) {
         this.mActivity = activity;
     }
 
@@ -89,10 +91,11 @@ public class BasicClientTask extends AsyncTask<String, Void, Integer> {
         // que le pasa al servidordel usuario que lo
         // está ejecutando.
 
-        tipoQuery = params[0];
-        busqueda = params[1];
-
-        String query = tipoQuery + " " + busqueda;
+        selectedAbv = params[0].replace(" ", "");
+        selectedIbu = params[1].replace(" ", "");
+        selectedStyle = params[2].replace(" ", "_");
+        selectedProperty = params[3];
+        String query = selectedAbv + " " + selectedIbu + " " + selectedStyle + " " + selectedProperty;
         Log.d(TAG, query);
         try{
             canalSalidaAlServidor.println(query);
@@ -128,7 +131,7 @@ public class BasicClientTask extends AsyncTask<String, Void, Integer> {
 
     protected void onPostExecute(Integer integer) {
         mActivity.beers = beers;
-        mActivity.basicSearchDone(integer);
+        mActivity.SimilarSearchDone(integer);
     }
 
     static private boolean conectarServidor(int maxIntentos){

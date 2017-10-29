@@ -166,8 +166,10 @@ public class MainActivity extends AppCompatActivity {
         myAdvancedClientTask.detach();
         Log.d(TAG, "Advanced search done");
 
-        Intent intent = new Intent(MainActivity.this, SearchBeersActivity.class);
+        Intent intent = new Intent(MainActivity.this, BeersListActivity.class);
         intent.putExtra("beers", beers);
+        String tipo = "advanced";
+        intent.putExtra("tipo", tipo);
         startActivity(intent);
     }
 
@@ -175,8 +177,10 @@ public class MainActivity extends AppCompatActivity {
         myBasicClientTask.detach();
         Log.d(TAG, "Basic search done");
 
-        Intent intent = new Intent(MainActivity.this, SearchBeersActivity.class);
+        Intent intent = new Intent(MainActivity.this, BeersListActivity.class);
         intent.putExtra("beers", beers);
+        String tipo = "basic";
+        intent.putExtra("tipo", tipo);
         startActivity(intent);
     }
 }

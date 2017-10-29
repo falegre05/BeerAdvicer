@@ -13,9 +13,9 @@ import java.util.ArrayList;
  * Created by ferzi on 27/09/2017.
  */
 
-public class SearchBeersActivity extends Activity {
+public class BeersListActivity extends Activity {
 
-    private final static String TAG = "SearchBeersActivity";
+    private final static String TAG = "BeersListActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class SearchBeersActivity extends Activity {
 
         Intent i = getIntent();
         ArrayList beers = (ArrayList) i.getSerializableExtra("beers");
+        final String tipo = i.getExtras().getString("tipo");
         if (!beers.isEmpty()) {
             ListViewAdapter listAdapter = new ListViewAdapter(this, beers);
             final ListView listView = (ListView) findViewById(R.id.beers_listView);
@@ -36,8 +37,9 @@ public class SearchBeersActivity extends Activity {
 
                     Beer beer = (Beer) listView.getItemAtPosition(i);
 
-                    Intent intent = new Intent(SearchBeersActivity.this, BeerInfoActivity.class);
+                    Intent intent = new Intent(BeersListActivity.this, BeerInfoActivity.class);
                     intent.putExtra("beer", beer);
+                    intent.putExtra("tipo", tipo);
                     startActivity(intent);
                 }
             });
