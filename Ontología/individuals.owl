@@ -1,0 +1,1337 @@
+Individual: <http://beerOntology.es/Hijos_de_Rivera_1906_Red_Vintage>
+
+	Types: 
+		<http://beerOntology.es/Imperial_Pils-Strong_Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_197453.jpg",
+		<http://beerOntology.es/brewery>  "Estrella Galicia",
+		<http://beerOntology.es/overall_rating>  18,
+		<http://beerOntology.es/style_rating>  62
+
+Individual: <http://beerOntology.es/Cervezas_976_Rubia>
+
+	Types: 
+		<http://beerOntology.es/Golden_Ale-Blond_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_325700.jpg",
+		<http://beerOntology.es/brewery>  "Cervezas 976",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Fischer_Adelscott>
+
+	Types: 
+		<http://beerOntology.es/Scotch_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.8,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_10.jpg",
+		<http://beerOntology.es/brewery>  "Heineken (France)",
+		<http://beerOntology.es/overall_rating>  7,
+		<http://beerOntology.es/style_rating>  0
+
+Individual: <http://beerOntology.es/Aecht_Schlenkerla_Rauchbier_Weizen>
+
+	Types: 
+		<http://beerOntology.es/Smoked>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_8565.jpg",
+		<http://beerOntology.es/IBU>  20,
+		<http://beerOntology.es/brewery>  "Brauerei Heller",
+		<http://beerOntology.es/overall_rating>  90,
+		<http://beerOntology.es/style_rating>  91
+
+Individual: <http://beerOntology.es/Alhambra_Reserva_Roja>
+
+	Types: 
+		<http://beerOntology.es/Doppelbock>
+
+	Facts:
+		<http://beerOntology.es/ABV>  7.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_460036.jpg",
+		<http://beerOntology.es/IBU>  19,
+		<http://beerOntology.es/brewery>  "Alhambra (Grupo Mahou-San Miguel)",
+		<http://beerOntology.es/overall_rating>  17,
+		<http://beerOntology.es/style_rating>  6
+
+Individual: <http://beerOntology.es/Almaza_Pilsener>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_7755.jpg",
+		<http://beerOntology.es/brewery>  "Brasserie Almaza (Heineken)",
+		<http://beerOntology.es/overall_rating>  3,
+		<http://beerOntology.es/style_rating>  40
+
+Individual: <http://beerOntology.es/Ambar_Premium_Quality>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_8898.jpg",
+		<http://beerOntology.es/brewery>  "La Zaragozana",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Asahi_Super_Dry>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_251.jpg",
+		<http://beerOntology.es/brewery>  "Asahi Breweries",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  52
+
+Individual: <http://beerOntology.es/Augustiner_Lagerbier_Hell>
+
+	Types: 
+		<http://beerOntology.es/Dortmunder-Helles>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_9604.jpg",
+		<http://beerOntology.es/brewery>  "Augustiner-Bräu",
+		<http://beerOntology.es/overall_rating>  42,
+		<http://beerOntology.es/style_rating>  89
+
+Individual: <http://beerOntology.es/Baltika_5_Zolotoe_(Golden)>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.3,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_25329.jpg",
+		<http://beerOntology.es/brewery>  "Baltika Brewery (Baltic Beverages Holding - Carlsberg)",
+		<http://beerOntology.es/overall_rating>  4,
+		<http://beerOntology.es/style_rating>  50
+
+Individual: <http://beerOntology.es/Baltika_7_Eksportnoe_(Export)>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.4,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_17453.jpg",
+		<http://beerOntology.es/brewery>  "Baltika Brewery (Baltic Beverages Holding - Carlsberg)",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  62
+
+Individual: <http://beerOntology.es/Baltika_9_Krepkoe_(Strong)>
+
+	Types: 
+		<http://beerOntology.es/Imperial_Pils-Strong_Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_10540.jpg",
+		<http://beerOntology.es/brewery>  "Baltika Brewery (Baltic Beverages Holding - Carlsberg)",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  25
+
+Individual: <http://beerOntology.es/Bavaria_8.6_(Original)>
+
+	Types: 
+		<http://beerOntology.es/Imperial_Pils-Strong_Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.6,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_5588.jpg",
+		<http://beerOntology.es/brewery>  "Bavaria Brouwerij (Netherlands)",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  22
+
+Individual: <http://beerOntology.es/Benediktiner_Weissbier>
+
+	Types: 
+		<http://beerOntology.es/German_Hefeweizen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.4,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_157144.jpg",
+		<http://beerOntology.es/brewery>  "Klosterbrauerei Ettal",
+		<http://beerOntology.es/overall_rating>  49,
+		<http://beerOntology.es/style_rating>  87
+
+Individual: <http://beerOntology.es/Benediktiner_Weissbier_Dunkel>
+
+	Types: 
+		<http://beerOntology.es/Dunkelweizen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.4,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_249431.jpg",
+		<http://beerOntology.es/brewery>  "Klosterbrauerei Ettal",
+		<http://beerOntology.es/overall_rating>  38,
+		<http://beerOntology.es/style_rating>  47
+
+Individual: <http://beerOntology.es/Birra_del_Borgo_KeTo_Reporter>
+
+	Types: 
+		<http://beerOntology.es/Porter>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_68567.jpg",
+		<http://beerOntology.es/IBU>  23,
+		<http://beerOntology.es/brewery>  "Birra del Borgo (AB InBev)",
+		<http://beerOntology.es/overall_rating>  81,
+		<http://beerOntology.es/style_rating>  76
+
+Individual: <http://beerOntology.es/Bischofshof_Hefe-Weissbier_Hell>
+
+	Types: 
+		<http://beerOntology.es/German_Hefeweizen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.1,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_22712.jpg",
+		<http://beerOntology.es/brewery>  "Brauerei Bischofshof",
+		<http://beerOntology.es/overall_rating>  40,
+		<http://beerOntology.es/style_rating>  60
+
+Individual: <http://beerOntology.es/Blanche_de_Charleroi>
+
+	Types: 
+		<http://beerOntology.es/Witbier>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_10495.jpg",
+		<http://beerOntology.es/brewery>  "Brasserie de l’Abbaye d’Aulne",
+		<http://beerOntology.es/overall_rating>  31,
+		<http://beerOntology.es/style_rating>  38
+
+Individual: <http://beerOntology.es/Bohemia_Especial_(Dominican_Republic)>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_12261.jpg",
+		<http://beerOntology.es/brewery>  "Cervecería Nacionál Dominicana (AB-Inbev)",
+		<http://beerOntology.es/overall_rating>  3,
+		<http://beerOntology.es/style_rating>  39
+
+Individual: <http://beerOntology.es/Brahma_Beats>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_111717.jpg",
+		<http://beerOntology.es/brewery>  "Cerveceria Paraguaya - Cervepar",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/BrewDog_Brixton_Porter>
+
+	Types: 
+		<http://beerOntology.es/Porter>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_241683.jpg",
+		<http://beerOntology.es/IBU>  50,
+		<http://beerOntology.es/brewery>  "BrewDog",
+		<http://beerOntology.es/overall_rating>  86,
+		<http://beerOntology.es/style_rating>  86
+
+Individual: <http://beerOntology.es/BrewDog_Punk_IPA__(6%)>
+
+	Types: 
+		<http://beerOntology.es/India_Pale_Ale_(IPA)>
+
+	Facts:
+		<http://beerOntology.es/ABV>  6.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_72423.jpg",
+		<http://beerOntology.es/IBU>  60,
+		<http://beerOntology.es/brewery>  "BrewDog",
+		<http://beerOntology.es/overall_rating>  83,
+		<http://beerOntology.es/style_rating>  69
+
+Individual: <http://beerOntology.es/Budweiser_Budvar_B:Original_(Czechvar)_12°>
+
+	Types: 
+		<http://beerOntology.es/Czech_Pilsner_(Světlý)>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_1316.jpg",
+		<http://beerOntology.es/IBU>  22,
+		<http://beerOntology.es/brewery>  "Budějovický Budvar",
+		<http://beerOntology.es/overall_rating>  44,
+		<http://beerOntology.es/style_rating>  79
+
+Individual: <http://beerOntology.es/Calatrava_La_Mancha>
+
+	Types: 
+		<http://beerOntology.es/Golden_Ale-Blond_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.6,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_462602.jpg",
+		<http://beerOntology.es/brewery>  "Cervezas Calatrava S.L.",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Cannabia>
+
+	Types: 
+		<http://beerOntology.es/Spice-Herb-Vegetable>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.9,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_12414.jpg",
+		<http://beerOntology.es/brewery>  "Kronenbrauerei Wahl",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  5
+
+Individual: <http://beerOntology.es/Carlsberg_Lager_(UK)>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  3.8,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_40636.jpg",
+		<http://beerOntology.es/brewery>  "Carlsberg UK",
+		<http://beerOntology.es/overall_rating>  1,
+		<http://beerOntology.es/style_rating>  15
+
+Individual: <http://beerOntology.es/Chapeau_Banana>
+
+	Types: 
+		<http://beerOntology.es/Lambic_Style_-_Fruit>
+
+	Facts:
+		<http://beerOntology.es/ABV>  3.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_6094.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij De Troch",
+		<http://beerOntology.es/overall_rating>  7,
+		<http://beerOntology.es/style_rating>  2
+
+Individual: <http://beerOntology.es/Casablanca_(Casa_Beer)>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_9882.jpg",
+		<http://beerOntology.es/brewery>  "Société des Brasseries du Maroc (Heineken)",
+		<http://beerOntology.es/overall_rating>  6,
+		<http://beerOntology.es/style_rating>  68
+
+Individual: <http://beerOntology.es/Birra_dei_Borgia_Cesare>
+
+	Types: 
+		<http://beerOntology.es/India_Pale_Ale_(IPA)>
+
+	Facts:
+		<http://beerOntology.es/ABV>  7.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_547030.jpg",
+		<http://beerOntology.es/brewery>  "Birra dei Borgia",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Cruzcampo_Gran_Reserva_1904>
+
+	Types: 
+		<http://beerOntology.es/Imperial_Pils-Strong_Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  6.4,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_106332.jpg",
+		<http://beerOntology.es/brewery>  "Cruzcampo (Heineken España)",
+		<http://beerOntology.es/overall_rating>  10,
+		<http://beerOntology.es/style_rating>  48
+
+Individual: <http://beerOntology.es/Damm_Xibeca>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.6,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_9530.jpg",
+		<http://beerOntology.es/brewery>  "Damm",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  51
+
+Individual: <http://beerOntology.es/Delirium_Nocturnum>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Strong_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_5232.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij Huyghe",
+		<http://beerOntology.es/overall_rating>  90,
+		<http://beerOntology.es/style_rating>  88
+
+Individual: <http://beerOntology.es/Delirium_Red>
+
+	Types: 
+		<http://beerOntology.es/Fruit_Beer>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_136669.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij Huyghe",
+		<http://beerOntology.es/overall_rating>  37,
+		<http://beerOntology.es/style_rating>  55
+
+Individual: <http://beerOntology.es/Delirium_Tremens>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Strong_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_1039.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij Huyghe",
+		<http://beerOntology.es/overall_rating>  94,
+		<http://beerOntology.es/style_rating>  92
+
+Individual: <http://beerOntology.es/Diebels_Alt>
+
+	Types: 
+		<http://beerOntology.es/Altbier>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.9,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_3990.jpg",
+		<http://beerOntology.es/brewery>  "Brauerei Diebels (InBev)",
+		<http://beerOntology.es/overall_rating>  38,
+		<http://beerOntology.es/style_rating>  42
+
+Individual: <http://beerOntology.es/Edge_Brewing_Apassionada>
+
+	Types: 
+		<http://beerOntology.es/Fruit_Beer>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_352293.jpg",
+		<http://beerOntology.es/IBU>  3,
+		<http://beerOntology.es/brewery>  "Edge Brewing Barcelona",
+		<http://beerOntology.es/overall_rating>  79,
+		<http://beerOntology.es/style_rating>  94
+
+Individual: <http://beerOntology.es/Einbecker_Mai-Ur-Bock>
+
+	Types: 
+		<http://beerOntology.es/Heller_Bock>
+
+	Facts:
+		<http://beerOntology.es/ABV>  6.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_5112.jpg",
+		<http://beerOntology.es/brewery>  "Einbecker Brauhaus",
+		<http://beerOntology.es/overall_rating>  48,
+		<http://beerOntology.es/style_rating>  81
+
+Individual: <http://beerOntology.es/Erdinger_Pikantus>
+
+	Types: 
+		<http://beerOntology.es/Weizen_Bock>
+
+	Facts:
+		<http://beerOntology.es/ABV>  7.3,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_2445.jpg",
+		<http://beerOntology.es/brewery>  "Erdinger Weissbräu",
+		<http://beerOntology.es/overall_rating>  83,
+		<http://beerOntology.es/style_rating>  84
+
+Individual: <http://beerOntology.es/Erdinger_Weissbier_(Hefe-Weizen)>
+
+	Types: 
+		<http://beerOntology.es/German_Hefeweizen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.3,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_2468.jpg",
+		<http://beerOntology.es/brewery>  "Erdinger Weissbräu",
+		<http://beerOntology.es/overall_rating>  45,
+		<http://beerOntology.es/style_rating>  76
+
+Individual: <http://beerOntology.es/Estrella_Damm_Inedit>
+
+	Types: 
+		<http://beerOntology.es/Witbier>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.8,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_88624.jpg",
+		<http://beerOntology.es/brewery>  "Damm",
+		<http://beerOntology.es/overall_rating>  40,
+		<http://beerOntology.es/style_rating>  50
+
+Individual: <http://beerOntology.es/Floris_Chocolate>
+
+	Types: 
+		<http://beerOntology.es/Spice-Herb-Vegetable>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_546999.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij Huyghe",
+		<http://beerOntology.es/overall_rating>  1,
+		<http://beerOntology.es/style_rating>  1
+
+Individual: <http://beerOntology.es/Flying_Dog_Easy_IPA>
+
+	Types: 
+		<http://beerOntology.es/Session_IPA>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.7,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_211686.jpg",
+		<http://beerOntology.es/IBU>  50,
+		<http://beerOntology.es/brewery>  "Flying Dog Brewery",
+		<http://beerOntology.es/overall_rating>  82,
+		<http://beerOntology.es/style_rating>  81
+
+Individual: <http://beerOntology.es/Franziskaner_Hefe-Weissbier_Dunkel>
+
+	Types: 
+		<http://beerOntology.es/Dunkelweizen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_1089.jpg",
+		<http://beerOntology.es/brewery>  "Spaten-Franziskaner-Bräu (InBev)",
+		<http://beerOntology.es/overall_rating>  73,
+		<http://beerOntology.es/style_rating>  96
+
+Individual: <http://beerOntology.es/Gayant_La_Goudale_IPA>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  7.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_406134.jpg",
+		<http://beerOntology.es/brewery>  "Les Brasseurs De Gayant (Saint-Omer)",
+		<http://beerOntology.es/overall_rating>  14,
+		<http://beerOntology.es/style_rating>  6
+
+Individual: <http://beerOntology.es/Grimbergen_Cuvée_Blanche>
+
+	Types: 
+		<http://beerOntology.es/Witbier>
+
+	Facts:
+		<http://beerOntology.es/ABV>  6.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_75071.jpg",
+		<http://beerOntology.es/brewery>  "Kronenbourg (Carlsberg)",
+		<http://beerOntology.es/overall_rating>  43,
+		<http://beerOntology.es/style_rating>  59
+
+Individual: <http://beerOntology.es/Guinness_Draught>
+
+	Types: 
+		<http://beerOntology.es/Dry_Stout>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_1267.jpg",
+		<http://beerOntology.es/brewery>  "St. James’s Gate (Diageo)",
+		<http://beerOntology.es/overall_rating>  76,
+		<http://beerOntology.es/style_rating>  86
+
+Individual: <http://beerOntology.es/Guinness_Original_(South_Africa)>
+
+	Types: 
+		<http://beerOntology.es/Dry_Stout>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_171278.jpg",
+		<http://beerOntology.es/brewery>  "Sedibeng Brewery (Heineken, Diageo and Namibia Breweries)",
+		<http://beerOntology.es/overall_rating>  17,
+		<http://beerOntology.es/style_rating>  3
+
+Individual: <http://beerOntology.es/Guinness_Special_Export_(Belgian_version)>
+
+	Types: 
+		<http://beerOntology.es/Foreign_Stout>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_9155.jpg",
+		<http://beerOntology.es/IBU>  40,
+		<http://beerOntology.es/brewery>  "St. James’s Gate (Diageo)",
+		<http://beerOntology.es/overall_rating>  95,
+		<http://beerOntology.es/style_rating>  91
+
+Individual: <http://beerOntology.es/Gulden_Draak>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Strong_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  10.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_3958.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij Van Steenberge",
+		<http://beerOntology.es/overall_rating>  98,
+		<http://beerOntology.es/style_rating>  99
+
+Individual: <http://beerOntology.es/Hoegaarden_Verboden_Vrucht>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Strong_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_10278.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij Hoegaarden (AB-InBev)",
+		<http://beerOntology.es/overall_rating>  89,
+		<http://beerOntology.es/style_rating>  86
+
+Individual: <http://beerOntology.es/Hofbräu_München_Original>
+
+	Types: 
+		<http://beerOntology.es/Dortmunder-Helles>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.1,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_7531.jpg",
+		<http://beerOntology.es/brewery>  "Staatliches Hofbräuhaus München",
+		<http://beerOntology.es/overall_rating>  37,
+		<http://beerOntology.es/style_rating>  84
+
+Individual: <http://beerOntology.es/Holsten_Knight_Premium_Bier>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_47139.jpg",
+		<http://beerOntology.es/brewery>  "Holsten-Brauerei (Carlsberg)",
+		<http://beerOntology.es/overall_rating>  9,
+		<http://beerOntology.es/style_rating>  79
+
+Individual: <http://beerOntology.es/Adroit_Theory_Judas_Goat>
+
+	Types: 
+		<http://beerOntology.es/Imperial_Porter>
+
+	Facts:
+		<http://beerOntology.es/ABV>  9.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_518126.jpg",
+		<http://beerOntology.es/IBU>  30,
+		<http://beerOntology.es/brewery>  "Adroit Theory Brewing Company",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Kapuziner_Garten_Weissbier_Naturtrüb>
+
+	Types: 
+		<http://beerOntology.es/German_Hefeweizen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.6,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_532400.jpg",
+		<http://beerOntology.es/brewery>  "Kulmbacher Brauerei (Schörghuber)",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Tripel_Karmeliet>
+
+	Types: 
+		<http://beerOntology.es/Abbey_Tripel>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.4,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_5368.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij Bosteels (AB-InBev)",
+		<http://beerOntology.es/overall_rating>  99,
+		<http://beerOntology.es/style_rating>  100
+
+Individual: <http://beerOntology.es/Kilimanjaro_Premium_Lager>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_13837.jpg",
+		<http://beerOntology.es/brewery>  "Tanzanian Breweries (SABMiller)",
+		<http://beerOntology.es/overall_rating>  3,
+		<http://beerOntology.es/style_rating>  39
+
+Individual: <http://beerOntology.es/Kirin_Classic_Lager>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_43131.jpg",
+		<http://beerOntology.es/brewery>  "Kirin Brewery Company",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  62
+
+Individual: <http://beerOntology.es/Kronenbourg_1664>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_4459.jpg",
+		<http://beerOntology.es/brewery>  "Kronenbourg (Carlsberg)",
+		<http://beerOntology.es/overall_rating>  6,
+		<http://beerOntology.es/style_rating>  72
+
+Individual: <http://beerOntology.es/Krušovice_Imperial_12°>
+
+	Types: 
+		<http://beerOntology.es/Czech_Pilsner_(Světlý)>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_13753.jpg",
+		<http://beerOntology.es/IBU>  19,
+		<http://beerOntology.es/brewery>  "Královský pivovar Krušovice (Heineken)",
+		<http://beerOntology.es/overall_rating>  22,
+		<http://beerOntology.es/style_rating>  41
+
+Individual: <http://beerOntology.es/AltBier_KWAKnem>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Strong_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_339363.jpg",
+		<http://beerOntology.es/brewery>  "AltBier Restoran-Pivovarnya",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Delafield_La_Chouffer>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_86536.jpg",
+		<http://beerOntology.es/brewery>  "Delafield Brewhaus",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Aspetuck_Brew_Lab_Divine_Sublimation>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Strong_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  9.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_498809.jpg",
+		<http://beerOntology.es/IBU>  27,
+		<http://beerOntology.es/brewery>  "Aspetuck Brew Lab",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Front_Range_Trapper_Lake_Tripel>
+
+	Types: 
+		<http://beerOntology.es/Abbey_Tripel>
+
+	Facts:
+		<http://beerOntology.es/ABV>  8.8,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_228242.jpg",
+		<http://beerOntology.es/IBU>  21,
+		<http://beerOntology.es/brewery>  "Front Range Brewing Company",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/La_Trappe_Quadrupel>
+
+	Types: 
+		<http://beerOntology.es/Abt-Quadrupel>
+
+	Facts:
+		<http://beerOntology.es/ABV>  10.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_4565.jpg",
+		<http://beerOntology.es/brewery>  "La Trappe Trappist - Abdij O.L.V. Koningshoeven (Bavaria)",
+		<http://beerOntology.es/overall_rating>  99,
+		<http://beerOntology.es/style_rating>  96
+
+Individual: <http://beerOntology.es/Leffe_Blonde>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  6.6,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_2514.jpg",
+		<http://beerOntology.es/brewery>  "InBev Belgium",
+		<http://beerOntology.es/overall_rating>  73,
+		<http://beerOntology.es/style_rating>  89
+
+Individual: <http://beerOntology.es/Liefmans_Fruitesse>
+
+	Types: 
+		<http://beerOntology.es/Fruit_Beer>
+
+	Facts:
+		<http://beerOntology.es/ABV>  3.8,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_102724.jpg",
+		<http://beerOntology.es/brewery>  "Liefmans  (Duvel-Moortgat)",
+		<http://beerOntology.es/overall_rating>  35,
+		<http://beerOntology.es/style_rating>  50
+
+Individual: <http://beerOntology.es/Lindemans_Framboise>
+
+	Types: 
+		<http://beerOntology.es/Lambic_Style_-_Fruit>
+
+	Facts:
+		<http://beerOntology.es/ABV>  2.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_342.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij Lindemans",
+		<http://beerOntology.es/overall_rating>  91,
+		<http://beerOntology.es/style_rating>  47
+
+Individual: <http://beerOntology.es/Mahou_Cinco_Estrellas>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_14863.jpg",
+		<http://beerOntology.es/brewery>  "Mahou (Grupo Mahou-San Miguel)",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  57
+
+Individual: <http://beerOntology.es/Mahou_Maestra>
+
+	Types: 
+		<http://beerOntology.es/Imperial_Pils-Strong_Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  7.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_408148.jpg",
+		<http://beerOntology.es/brewery>  "Mahou (Grupo Mahou-San Miguel)",
+		<http://beerOntology.es/overall_rating>  12,
+		<http://beerOntology.es/style_rating>  51
+
+Individual: <http://beerOntology.es/Mammooth_Pale_Ale>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.6,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_134442.jpg",
+		<http://beerOntology.es/brewery>  "Cerveza Mammooth",
+		<http://beerOntology.es/overall_rating>  40,
+		<http://beerOntology.es/style_rating>  43
+
+Individual: <http://beerOntology.es/Hite_Prime_Max>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_13833.jpg",
+		<http://beerOntology.es/brewery>  "HiteJinro",
+		<http://beerOntology.es/overall_rating>  2,
+		<http://beerOntology.es/style_rating>  30
+
+Individual: <http://beerOntology.es/Miller_Genuine_Draft_(MGD)>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.7,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_405.jpg",
+		<http://beerOntology.es/brewery>  "Miller Brewing Company (MillerCoors)",
+		<http://beerOntology.es/overall_rating>  0,
+		<http://beerOntology.es/style_rating>  6
+
+Individual: <http://beerOntology.es/Mostarsko_Pivo>
+
+	Types: 
+		<http://beerOntology.es/Premium_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_148913.jpg",
+		<http://beerOntology.es/brewery>  "Hercegovačka Pivovara (Heppro)",
+		<http://beerOntology.es/overall_rating>  6,
+		<http://beerOntology.es/style_rating>  14
+
+Individual: <http://beerOntology.es/Redoak_Murphy's_Brew_Irish_Stout>
+
+	Types: 
+		<http://beerOntology.es/Stout>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_521047.jpg",
+		<http://beerOntology.es/brewery>  "Redoak Boutique Beer Cafe",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Mystery_Mythos>
+
+	Types: 
+		<http://beerOntology.es/Saison>
+
+	Facts:
+		<http://beerOntology.es/ABV>  7.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_397084.jpg",
+		<http://beerOntology.es/brewery>  "Mystery Brewing",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Modelo_Negra>
+
+	Types: 
+		<http://beerOntology.es/Premium_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.4,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_745.jpg",
+		<http://beerOntology.es/brewery>  "Grupo Modelo (Corona)",
+		<http://beerOntology.es/overall_rating>  16,
+		<http://beerOntology.es/style_rating>  44
+
+Individual: <http://beerOntology.es/Newcastle_Brown_Ale>
+
+	Types: 
+		<http://beerOntology.es/Brown_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.7,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_132.jpg",
+		<http://beerOntology.es/brewery>  "John Smiths (Heineken UK)",
+		<http://beerOntology.es/overall_rating>  31,
+		<http://beerOntology.es/style_rating>  28
+
+Individual: <http://beerOntology.es/Oud_Beersel_Framboise>
+
+	Types: 
+		<http://beerOntology.es/Lambic_Style_-_Fruit>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_49975.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij Oud Beersel",
+		<http://beerOntology.es/overall_rating>  85,
+		<http://beerOntology.es/style_rating>  42
+
+Individual: <http://beerOntology.es/Okocim_Jasne_Pełne_-_Beer>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_17915.jpg",
+		<http://beerOntology.es/brewery>  "Carlsberg Polska",
+		<http://beerOntology.es/overall_rating>  8,
+		<http://beerOntology.es/style_rating>  83
+
+Individual: <http://beerOntology.es/Ottakringer_Helles>
+
+	Types: 
+		<http://beerOntology.es/Dortmunder-Helles>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_9264.jpg",
+		<http://beerOntology.es/brewery>  "Ottakringer",
+		<http://beerOntology.es/overall_rating>  11,
+		<http://beerOntology.es/style_rating>  12
+
+Individual: <http://beerOntology.es/Paulaner_Brauhaus_Hefe-Weissbier_(Singapore)>
+
+	Types: 
+		<http://beerOntology.es/German_Hefeweizen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_224992.jpg",
+		<http://beerOntology.es/brewery>  "Paulaner Brauhaus (brewpub Singapore)",
+		<http://beerOntology.es/overall_rating>  41,
+		<http://beerOntology.es/style_rating>  63
+
+Individual: <http://beerOntology.es/Paulaner_Oktoberfest_Bier_(Wiesn_Bier)>
+
+	Types: 
+		<http://beerOntology.es/Oktoberfest-Märzen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  6.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_646.jpg",
+		<http://beerOntology.es/brewery>  "Paulaner Brauerei (Schörghuber)",
+		<http://beerOntology.es/overall_rating>  44,
+		<http://beerOntology.es/style_rating>  79
+
+Individual: <http://beerOntology.es/Peroni_Gran_Riserva_Puro_Malto>
+
+	Types: 
+		<http://beerOntology.es/Premium_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_259242.jpg",
+		<http://beerOntology.es/brewery>  "Birra Peroni Industriale (SABMiller)",
+		<http://beerOntology.es/overall_rating>  13,
+		<http://beerOntology.es/style_rating>  43
+
+Individual: <http://beerOntology.es/'t_Goeye_Goet_Pilsener>
+
+	Types: 
+		<http://beerOntology.es/Pilsener>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_125906.jpg",
+		<http://beerOntology.es/brewery>  "’t Goeye Goet  (in Openluchtmuseum)",
+		<http://beerOntology.es/overall_rating>  37,
+		<http://beerOntology.es/style_rating>  73
+
+Individual: <http://beerOntology.es/Doc's_Pilsner_Urquell_Art>
+
+	Types: 
+		<http://beerOntology.es/Czech_Pilsner_(Světlý)>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_128037.jpg",
+		<http://beerOntology.es/brewery>  "Doc’s Bier",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Pink_Killer>
+
+	Types: 
+		<http://beerOntology.es/Fruit_Beer>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_34094.jpg",
+		<http://beerOntology.es/brewery>  "Brasserie de Silly",
+		<http://beerOntology.es/overall_rating>  3,
+		<http://beerOntology.es/style_rating>  4
+
+Individual: <http://beerOntology.es/Populus_Cannibal_Pale_Ale>
+
+	Types: 
+		<http://beerOntology.es/American_Pale_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_403065.jpg",
+		<http://beerOntology.es/IBU>  30,
+		<http://beerOntology.es/brewery>  "Populus",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Bierol_El_Presidente>
+
+	Types: 
+		<http://beerOntology.es/India_Pale_Ale_(IPA)>
+
+	Facts:
+		<http://beerOntology.es/ABV>  7.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_486340.jpg",
+		<http://beerOntology.es/brewery>  "Bierol",
+		<http://beerOntology.es/overall_rating>  97,
+		<http://beerOntology.es/style_rating>  98
+
+Individual: <http://beerOntology.es/Robinsons_Trooper_(Bottle)>
+
+	Types: 
+		<http://beerOntology.es/Premium_Bitter-ESB>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.7,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_204623.jpg",
+		<http://beerOntology.es/brewery>  "Robinsons",
+		<http://beerOntology.es/overall_rating>  38,
+		<http://beerOntology.es/style_rating>  43
+
+Individual: <http://beerOntology.es/Rochefort_Trappistes_8>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Strong_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  9.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_5400.jpg",
+		<http://beerOntology.es/brewery>  "Brasserie Rochefort",
+		<http://beerOntology.es/overall_rating>  100,
+		<http://beerOntology.es/style_rating>  100
+
+Individual: <http://beerOntology.es/Cerveza_Quisqueya>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_12262.jpg",
+		<http://beerOntology.es/brewery>  "Cervecería Vegana",
+		<http://beerOntology.es/overall_rating>  1,
+		<http://beerOntology.es/style_rating>  24
+
+Individual: <http://beerOntology.es/Safari_Lager>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_13177.jpg",
+		<http://beerOntology.es/brewery>  "Tanzanian Breweries (SABMiller)",
+		<http://beerOntology.es/overall_rating>  4,
+		<http://beerOntology.es/style_rating>  45
+
+Individual: <http://beerOntology.es/Samuel_Smiths_Nut_Brown_Ale>
+
+	Types: 
+		<http://beerOntology.es/Brown_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_1477.jpg",
+		<http://beerOntology.es/brewery>  "Samuel Smith",
+		<http://beerOntology.es/overall_rating>  87,
+		<http://beerOntology.es/style_rating>  95
+
+Individual: <http://beerOntology.es/San_Miguel_1516>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_18110.jpg",
+		<http://beerOntology.es/brewery>  "San Miguel Spain (Grupo Mahou-San Miguel)",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  58
+
+Individual: <http://beerOntology.es/San_Miguel_Fresca>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.4,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_167512.jpg",
+		<http://beerOntology.es/brewery>  "San Miguel Spain (Grupo Mahou-San Miguel)",
+		<http://beerOntology.es/overall_rating>  1,
+		<http://beerOntology.es/style_rating>  18
+
+Individual: <http://beerOntology.es/San_Miguel_Selecta_XV>
+
+	Types: 
+		<http://beerOntology.es/Amber_Lager-Vienna>
+
+	Facts:
+		<http://beerOntology.es/ABV>  6.2,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_93206.jpg",
+		<http://beerOntology.es/brewery>  "San Miguel Spain (Grupo Mahou-San Miguel)",
+		<http://beerOntology.es/overall_rating>  10,
+		<http://beerOntology.es/style_rating>  30
+
+Individual: <http://beerOntology.es/San_Servolo_Svijetlo_Pivo>
+
+	Types: 
+		<http://beerOntology.es/Czech_Pilsner_(Světlý)>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_209465.jpg",
+		<http://beerOntology.es/brewery>  "Bujska Pivovara",
+		<http://beerOntology.es/overall_rating>  40,
+		<http://beerOntology.es/style_rating>  70
+
+Individual: <http://beerOntology.es/Sapporo_Premium_Lager>
+
+	Types: 
+		<http://beerOntology.es/Pale_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.7,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_108945.jpg",
+		<http://beerOntology.es/brewery>  "Sapporo Breweries",
+		<http://beerOntology.es/overall_rating>  5,
+		<http://beerOntology.es/style_rating>  60
+
+Individual: <http://beerOntology.es/Holy_Mountain_-_Tired_Hands_Satan_is_Real>
+
+	Types: 
+		<http://beerOntology.es/Pilsener>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.8,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_499491.jpg",
+		<http://beerOntology.es/brewery>  "Holy Mountain Brewing Company",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Serengeti_Premium_Lager>
+
+	Types: 
+		<http://beerOntology.es/Premium_Lager>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.5,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_13838.jpg",
+		<http://beerOntology.es/brewery>  "Serengeti Breweries (EABL/East African Breweries)",
+		<http://beerOntology.es/overall_rating>  3,
+		<http://beerOntology.es/style_rating>  2
+
+Individual: <http://beerOntology.es/Fox_Walsingham_Lavender_Honey_Beer>
+
+	Types: 
+		<http://beerOntology.es/Golden_Ale-Blond_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.8,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_161625.jpg",
+		<http://beerOntology.es/brewery>  "Fox (Norfolk)",
+		<http://beerOntology.es/overall_rating>  None,
+		<http://beerOntology.es/style_rating>  None
+
+Individual: <http://beerOntology.es/Spaten_Oktoberfestbier>
+
+	Types: 
+		<http://beerOntology.es/Oktoberfest-Märzen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.9,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_27599.jpg",
+		<http://beerOntology.es/brewery>  "Spaten-Franziskaner-Bräu (InBev)",
+		<http://beerOntology.es/overall_rating>  37,
+		<http://beerOntology.es/style_rating>  57
+
+Individual: <http://beerOntology.es/St._Bernardus_Abt_12>
+
+	Types: 
+		<http://beerOntology.es/Abt-Quadrupel>
+
+	Facts:
+		<http://beerOntology.es/ABV>  10.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_2530.jpg",
+		<http://beerOntology.es/brewery>  "St. Bernardus Brouwerij",
+		<http://beerOntology.es/overall_rating>  100,
+		<http://beerOntology.es/style_rating>  100
+
+Individual: <http://beerOntology.es/St._Georgen_Bräu_Keller_Bier>
+
+	Types: 
+		<http://beerOntology.es/Zwickel-Keller-Landbier>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.9,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_4634.jpg",
+		<http://beerOntology.es/brewery>  "St. Georgen Bräu",
+		<http://beerOntology.es/overall_rating>  75,
+		<http://beerOntology.es/style_rating>  96
+
+Individual: <http://beerOntology.es/Te_Deum_Blonde>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.8,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_38191.jpg",
+		<http://beerOntology.es/brewery>  "Brasserie Du Bocq",
+		<http://beerOntology.es/overall_rating>  41,
+		<http://beerOntology.es/style_rating>  44
+
+Individual: <http://beerOntology.es/Viven_Ale>
+
+	Types: 
+		<http://beerOntology.es/Belgian_Ale>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.0,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_114129.jpg",
+		<http://beerOntology.es/brewery>  "Brouwerij van Viven",
+		<http://beerOntology.es/overall_rating>  56,
+		<http://beerOntology.es/style_rating>  76
+
+Individual: <http://beerOntology.es/Warsteiner_Premium_Verum>
+
+	Types: 
+		<http://beerOntology.es/Pilsener>
+
+	Facts:
+		<http://beerOntology.es/ABV>  4.8,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_1417.jpg",
+		<http://beerOntology.es/brewery>  "Warsteiner Brauerei",
+		<http://beerOntology.es/overall_rating>  16,
+		<http://beerOntology.es/style_rating>  38
+
+Individual: <http://beerOntology.es/Weihenstephaner_Hefeweissbier_Dunkel>
+
+	Types: 
+		<http://beerOntology.es/Dunkelweizen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.3,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_4583.jpg",
+		<http://beerOntology.es/IBU>  14,
+		<http://beerOntology.es/brewery>  "Bayerische Staatsbrauerei Weihenstephan",
+		<http://beerOntology.es/overall_rating>  92,
+		<http://beerOntology.es/style_rating>  99
+
+Individual: <http://beerOntology.es/Weihenstephaner_Hefeweissbier>
+
+	Types: 
+		<http://beerOntology.es/German_Hefeweizen>
+
+	Facts:
+		<http://beerOntology.es/ABV>  5.4,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_1156.jpg",
+		<http://beerOntology.es/IBU>  14,
+		<http://beerOntology.es/brewery>  "Bayerische Staatsbrauerei Weihenstephan",
+		<http://beerOntology.es/overall_rating>  98,
+		<http://beerOntology.es/style_rating>  100
+
+Individual: <http://beerOntology.es/Weihenstephaner_Vitus>
+
+	Types: 
+		<http://beerOntology.es/Weizen_Bock>
+
+	Facts:
+		<http://beerOntology.es/ABV>  7.7,
+		<http://beerOntology.es/img>  "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_70791.jpg",
+		<http://beerOntology.es/IBU>  17,
+		<http://beerOntology.es/brewery>  "Bayerische Staatsbrauerei Weihenstephan",
+		<http://beerOntology.es/overall_rating>  98,
+		<http://beerOntology.es/style_rating>  99
+
