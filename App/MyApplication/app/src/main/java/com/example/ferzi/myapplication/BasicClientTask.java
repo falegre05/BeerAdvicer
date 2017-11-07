@@ -48,10 +48,12 @@ public class BasicClientTask extends AsyncTask<String, Void, Integer> {
 
         exito = conectarServidor(10); //10 intentos
 
+        Integer ret = 0;
+
         if(!exito){
             Log.d(TAG, "Don't know about host:"
                     + SERVER_ADDRESS);
-            System.exit(1); //abortar si hay problemas
+            ret = 1;
         }
 
 
@@ -123,7 +125,7 @@ public class BasicClientTask extends AsyncTask<String, Void, Integer> {
         } catch (Exception e){
             Log.d(TAG, e.toString());
         }
-        return null;
+        return ret;
     }
 
     protected void onPostExecute(Integer integer) {
@@ -142,6 +144,11 @@ public class BasicClientTask extends AsyncTask<String, Void, Integer> {
                 socketAlServidor = new Socket(SERVER_ADDRESS, SERVER_PORT);
                 exito = true;
             } catch (Exception e) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e1) {
+                    e1.printStackTrace();
+                }
                 van++;
                 Log.d(TAG, "Failures:" + van);
             }

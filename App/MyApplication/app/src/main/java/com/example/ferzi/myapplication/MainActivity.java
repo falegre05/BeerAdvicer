@@ -1,5 +1,7 @@
 package com.example.ferzi.myapplication;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +10,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
@@ -33,15 +36,16 @@ public class MainActivity extends AppCompatActivity {
     private String selectedStyle;
     private String selectedProperty;
     private RadioButton cerveza;
-    private RadioButton cerveceria;
     private EditText editQuery;
 
     public ArrayList beers;
+    AlertDialog.Builder about;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate");
+
         loadMainScreen();
     }
 
@@ -67,6 +71,27 @@ public class MainActivity extends AppCompatActivity {
                 normalSearch();
             }
         });
+
+        //Button about
+        about = new AlertDialog.Builder(this);
+        about.setMessage("Esta aplicación ha sido desarrollada por Fernando Alegre como su TFG.");
+        about.setCancelable(true);
+
+        about.setPositiveButton(
+                "Ok",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        ImageButton buttonAbout = (ImageButton) findViewById(R.id.buttonAbout);
+        buttonAbout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                about.show();
+            }
+        });
+
     }
 
     @Override
@@ -135,7 +160,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.normal_search);
 
         cerveza = (RadioButton)findViewById(R.id.radio_cerveza);
-        cerveceria = (RadioButton)findViewById(R.id.radio_cerveceria);
         myBasicClientTask = new BasicClientTask(this);
         editQuery = (EditText)findViewById((R.id.editQuery));
 
@@ -163,24 +187,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void advancedSearchDone(Integer integer) {
-        myAdvancedClientTask.detach();
-        Log.d(TAG, "Advanced search done");
+        if (integer == 0) {
+            myAdvancedClientTask.detach();
+            Log.d(TAG, "Advanced search done");
 
-        Intent intent = new Intent(MainActivity.this, BeersListActivity.class);
-        intent.putExtra("beers", beers);
-        String tipo = "advanced";
-        intent.putExtra("tipo", tipo);
-        startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, BeersListActivity.class);
+            intent.putExtra("beers", beers);
+            String tipo = "advanced";
+            intent.putExtra("tipo", tipo);
+            startActivity(intent);
+        }
+        else{
+            setContentView(R.layout.server_down);
+        }
     }
 
     public void basicSearchDone(Integer integer) {
-        myBasicClientTask.detach();
-        Log.d(TAG, "Basic search done");
+        if (integer == 0) {
+            myBasicClientTask.detach();
+            Log.d(TAG, "Basic search done");
 
-        Intent intent = new Intent(MainActivity.this, BeersListActivity.class);
-        intent.putExtra("beers", beers);
-        String tipo = "basic";
-        intent.putExtra("tipo", tipo);
-        startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, BeersListActivity.class);
+            intent.putExtra("beers", beers);
+            String tipo = "basic";
+            intent.putExtra("tipo", tipo);
+            startActivity(intent);
+        }
+        else{
+            setContentView(R.layout.server_down);
+        }
     }
 }
