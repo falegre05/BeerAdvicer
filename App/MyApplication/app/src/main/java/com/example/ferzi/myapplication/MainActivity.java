@@ -198,7 +198,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         else{
+            Log.d(TAG, "Advanced search coulnd't be done");
             setContentView(R.layout.server_down);
+            myAdvancedClientTask.detach();
         }
     }
 
@@ -214,7 +216,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         else{
+            Log.d(TAG, "Advanced search coulnd't be done");
             setContentView(R.layout.server_down);
+            myBasicClientTask.detach();
         }
     }
 }

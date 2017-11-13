@@ -50,12 +50,11 @@ public class AdvancedClientTask extends AsyncTask<String, Void, Integer> {
 
         exito = conectarServidor(10); //10 intentos
 
-        Integer ret = 0;
 
         if(!exito){
             Log.d(TAG, "Don't know about host:"
                     + SERVER_ADDRESS);
-            ret = 1;
+            return 1;
         }
 
 
@@ -128,7 +127,7 @@ public class AdvancedClientTask extends AsyncTask<String, Void, Integer> {
         } catch (Exception e){
             Log.d(TAG, e.toString());
         }
-        return ret;
+        return 0;
     }
 
     protected void onPostExecute(Integer integer) {
