@@ -131,7 +131,7 @@ public class SimilarClientTask extends AsyncTask<String, Void, Integer> {
 
     protected void onPostExecute(Integer integer) {
         mActivity.beers = beers;
-        mActivity.SimilarSearchDone(integer);
+        mActivity.similarSearchDone(integer);
     }
 
     static private boolean conectarServidor(int maxIntentos){

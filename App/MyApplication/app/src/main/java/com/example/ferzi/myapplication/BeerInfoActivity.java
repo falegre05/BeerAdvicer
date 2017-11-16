@@ -20,7 +20,7 @@ public class BeerInfoActivity extends Activity {
 
     private final static String TAG = "BeerInfoActivity";
 
-    private DownloadImage myDownloadImage;
+    private DownloadImageTask myDownloadImageTask;
     private SimilarClientTask mySimilarClientTask;
 
     private String selectedAbv;
@@ -38,19 +38,19 @@ public class BeerInfoActivity extends Activity {
         Intent i = getIntent();
         beer = (Beer) i.getSerializableExtra("beer");
         tipo = i.getExtras().getString("tipo");
-        DownloadImage myDownloadImage = new DownloadImage(this);
-        myDownloadImage.execute(beer);
+        DownloadImageTask myDownloadImageTask = new DownloadImageTask(this);
+        myDownloadImageTask.execute(beer);
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        DownloadImage myDownloadImage = new DownloadImage(this);
-        myDownloadImage.execute(beer);
+        DownloadImageTask myDownloadImageTask = new DownloadImageTask(this);
+        myDownloadImageTask.execute(beer);
     }
 
     public void loadBeerInfo (final Beer beer, Bitmap bmp) {
-        //myDownloadImage.detach();
+        //myDownloadImageTask.detach();
 
         setContentView(R.layout.info_beer);
         Log.d(TAG, beer.toString());
@@ -65,7 +65,11 @@ public class BeerInfoActivity extends Activity {
         brewery.setText("Cervecería: " + beer.getBrewery());
 
         TextView ibu = (TextView) findViewById(R.id.ibu);
-        ibu.setText("Amargura: " + beer.getIbu());
+        if(beer.getIbu().equals("0")){
+            ibu.setText("Amargura: --");
+        } else {
+            ibu.setText("Amargura: " + beer.getIbu());
+        }
 
         TextView abv = (TextView) findViewById(R.id.abv);
         abv.setText("Alcohol: " + beer.getAbv());
@@ -208,7 +212,7 @@ public class BeerInfoActivity extends Activity {
         else if(max == Muchisimo){ selectedIbu = "Muchísimo";}
     }
 
-    public void SimilarSearchDone(Integer integer) {
+    public void similarSearchDone(Integer integer) {
         mySimilarClientTask.detach();
         Log.d(TAG, "Advanced search done");
 

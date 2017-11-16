@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonSimple = (Button) findViewById(R.id.buttonSimple);
         buttonSimple.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                normalSearch();
+                basicSearch();
             }
         });
 
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void normalSearch() {
+    public void basicSearch() {
 
         setContentView(R.layout.normal_search);
 

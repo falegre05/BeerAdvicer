@@ -13,7 +13,7 @@ import java.net.URL;
  * Created by ferzi on 19/09/2017.
  */
 
-public class DownloadImage extends AsyncTask<Beer, Void, Integer> {
+public class DownloadImageTask extends AsyncTask<Beer, Void, Integer> {
 
     private Context mContext;
     Beer beer;
@@ -21,7 +21,7 @@ public class DownloadImage extends AsyncTask<Beer, Void, Integer> {
 
     private BeerInfoActivity mActivity = null;
 
-    public DownloadImage(BeerInfoActivity activity) {
+    public DownloadImageTask(BeerInfoActivity activity) {
         attach(activity);
         mContext=activity;
     }
