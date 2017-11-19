@@ -88,6 +88,5 @@
         android:layout_gravity="center"
         android:backgroundTint="#4169E1"
         android:textColor="@android:color/white"
-        android:text="Buscar similares"
-        android:visibility="gone"/>/>
+        android:text="Buscar similares" />
 </LinearLayout>

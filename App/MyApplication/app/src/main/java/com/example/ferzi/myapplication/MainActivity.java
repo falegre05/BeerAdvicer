@@ -193,8 +193,6 @@ public class MainActivity extends AppCompatActivity {
 
             Intent intent = new Intent(MainActivity.this, BeersListActivity.class);
             intent.putExtra("beers", beers);
-            String tipo = "advanced";
-            intent.putExtra("tipo", tipo);
             startActivity(intent);
         }
         else{
@@ -211,8 +209,6 @@ public class MainActivity extends AppCompatActivity {
 
             Intent intent = new Intent(MainActivity.this, BeersListActivity.class);
             intent.putExtra("beers", beers);
-            String tipo = "basic";
-            intent.putExtra("tipo", tipo);
             startActivity(intent);
         }
         else{

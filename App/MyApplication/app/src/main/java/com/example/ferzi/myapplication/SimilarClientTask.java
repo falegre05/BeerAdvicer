@@ -94,8 +94,7 @@ public class SimilarClientTask extends AsyncTask<String, Void, Integer> {
         selectedAbv = params[0].replace(" ", "");
         selectedIbu = params[1].replace(" ", "");
         selectedStyle = params[2].replace(" ", "_");
-        selectedProperty = params[3];
-        String query = selectedAbv + " " + selectedIbu + " " + selectedStyle + " " + selectedProperty;
+        String query = selectedAbv + " " + selectedIbu + " " + selectedStyle;
         Log.d(TAG, query);
         try{
             canalSalidaAlServidor.println(query);
