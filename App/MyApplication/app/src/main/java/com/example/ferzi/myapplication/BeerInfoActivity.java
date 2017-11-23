@@ -78,6 +78,13 @@ public class BeerInfoActivity extends Activity {
         TextView style = (TextView) findViewById(R.id.style);
         style.setText("Estilo: " + beer.getBeerStyle().replace("_", " "));
 
+        TextView country = (TextView) findViewById(R.id.country);
+        if(beer.getCountry().equals("")) {
+            country.setText("País: --");
+        } else if(beer.getCountry().equals("Spain")){
+            country.setText("País: España");
+        }
+
         Button button = (Button) findViewById(R.id.buttonSimilares);
         mySimilarClientTask = new SimilarClientTask(this);
         button.setOnClickListener(new View.OnClickListener() {

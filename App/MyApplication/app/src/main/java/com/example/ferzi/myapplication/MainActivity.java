@@ -16,6 +16,7 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -164,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         editQuery = (EditText)findViewById((R.id.editQuery));
 
 
-        //Button Buscar Personalizada
+        //Button Buscar
         Button buttonBuscar = (Button) findViewById(R.id.buttonSearch);
         buttonBuscar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.regex.Pattern;
 
 /**
@@ -94,7 +95,8 @@ public class SimilarClientTask extends AsyncTask<String, Void, Integer> {
         selectedAbv = params[0].replace(" ", "");
         selectedIbu = params[1].replace(" ", "");
         selectedStyle = params[2].replace(" ", "_");
-        String query = selectedAbv + " " + selectedIbu + " " + selectedStyle;
+        String country = Locale.getDefault().getCountry();
+        String query = selectedAbv + " " + selectedIbu + " " + selectedStyle + " " + country;
         Log.d(TAG, query);
         try{
             canalSalidaAlServidor.println(query);
@@ -161,6 +163,10 @@ public class SimilarClientTask extends AsyncTask<String, Void, Integer> {
         int i = s.indexOf("ibu")+5;
         String ibu = s.substring(i, s.indexOf("'", i));
 
+        int c = s.indexOf("country")+9;
+        String country = s.substring(c, s.indexOf("'", c));
+        System.out.println(country);
+
         int im = s.indexOf("img")+5;
         String img = s.substring(im, s.indexOf("'", im));
 
@@ -176,7 +182,7 @@ public class SimilarClientTask extends AsyncTask<String, Void, Integer> {
         int bs = s.indexOf("beerStyle")+11;
         String beerStyle = s.substring(bs, s.indexOf("'", bs));
 
-        return new Beer(name, abv, ibu, img, Integer.valueOf(style_rating), Double.valueOf(func_pertenencia), brewery, beerStyle);
+        return new Beer(name, abv, ibu, country, img, Integer.valueOf(style_rating), Double.valueOf(func_pertenencia), brewery, beerStyle);
     }
 
     void detach() {
