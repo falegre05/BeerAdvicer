@@ -42,7 +42,7 @@ class LoadOntTask extends AsyncTask<String, Void, Integer> {
         // First, we create an OWLOntologyManager object. The manager will load and save ontologies.
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
         // We use the OWL API to load the ontology.
-        InputStream ontology = mContext.getApplicationContext().getResources().openRawResource(R.raw.ontology_fuzzy);
+        InputStream ontology = mContext.getApplicationContext().getResources().openRawResource(R.raw.ontologyv6_fuzzy);
 
         try {
             OWLOntology ont = manager.loadOntologyFromOntologyDocument(ontology);
